@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "style": {
+    "visual_style": "flat-cartoon",
+    "palette": [
+      "#ffd39f",
+      "#ff8f68",
+      "#75b8ff",
+      "#ffe7a3",
+      "#8fd17f",
+      "#f2c94c"
+    ],
+    "line_style": "thick rounded outlines",
+    "texture": "flat two-tone, no gradients"
+  },
+  "characters": [
+    {
+      "id": "johny",
+      "display_name": "Johny",
+      "role": "mischievous 4-5 year old boy, the little sugar thief",
+      "body_type": "small rounded toddler, big head, short limbs",
+      "style": "flat-cartoon",
+      "silhouette_notes": "Round head with a single messy hair tuft; puffy overalls; tiny feet. Reads as small and quick.",
+      "required_emotions": [
+        "happy",
+        "mischievous",
+        "guilty",
+        "innocent",
+        "giggly",
+        "proud",
+        "surprised"
+      ],
+      "required_actions": [
+        "tiptoe",
+        "freeze",
+        "eat_lick",
+        "nod",
+        "peek",
+        "shrink_shrug",
+        "shake_head",
+        "cover_mouth",
+        "point",
+        "giggle",
+        "run_off",
+        "idle",
+        "blink"
+      ],
+      "required_views": [
+        "front",
+        "side"
+      ],
+      "props": [
+        "sugar_cube",
+        "sugar_on_nose"
+      ],
+      "constraints": [
+        "keep under 3 unique hand poses",
+        "no complex physical contact"
+      ]
+    },
+    {
+      "id": "papa",
+      "display_name": "Papa",
+      "role": "warm, amused father who always knows",
+      "body_type": "tall rounded adult, broad shoulders, gentle face",
+      "style": "flat-cartoon",
+      "silhouette_notes": "Tall rounded body, apron over shirt, soft rounded shoulders. Reads as big, warm, and safe.",
+      "required_emotions": [
+        "warm",
+        "amused",
+        "curious",
+        "teasing",
+        "delighted",
+        "mock_dramatic"
+      ],
+      "required_actions": [
+        "lean",
+        "crouch",
+        "peek",
+        "point",
+        "ruffle_hair",
+        "follow",
+        "idle",
+        "blink",
+        "laugh"
+      ],
+      "required_views": [
+        "front",
+        "side"
+      ],
+      "props": [
+        "apron"
+      ],
+      "constraints": [
+        "keep to 3 hand poses",
+        "no complex physical contact"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "character_spec_generator",
+    "brief": "Johny Johny Yes Papa - cozy two-character nursery rhyme. Johny: mischievous 4-5yo boy in overalls. Papa: warm amused father in apron. Flat cartoon, warm palette."
+  }
+}
