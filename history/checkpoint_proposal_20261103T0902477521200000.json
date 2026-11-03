@@ -1,0 +1,620 @@
+{
+  "version": "1.0",
+  "project_id": "johny-johny",
+  "pipeline_type": "character-animation",
+  "stage": "proposal",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-03T09:02:47.752120+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "The Pantry Door",
+          "hook": "A little door, a little thief, and a papa who always knows.",
+          "narrative_structure": "story",
+          "visual_approach": "Two-character flat cartoon in a warm kitchen. The pantry door is the recurring stage: Johny tiptoes in and out of frame through it, Papa leans in to peek. Simple silhouettes, rounded shapes, honey-and-cream palette with coral accents. Every line of the rhyme gets a physical beat: tiptoe, eat, wipe nose, peek, giggle, run.",
+          "suggested_playbook": "flat-motion-graphics",
+          "target_audience": "Toddlers and preschoolers (1-5) plus parents who grew up with the rhyme",
+          "target_platform": "youtube",
+          "target_duration_seconds": 65,
+          "key_points": [
+            "Full traditional rhyme, all 12 lines, in order",
+            "Two distinct voices: child (Johny) and warm adult (Papa)",
+            "Every dialogue line paired with a readable character action",
+            "Big friendly captions so pre-readers can follow along"
+          ],
+          "core_message": "A cozy, giggly bedtime-style take on the classic rhyme",
+          "cta": "Follow for more nursery rhymes",
+          "tone": "playful, warm, cozy",
+          "grounded_in": [
+            "character-animation pipeline supports 2-character local rigged acting",
+            "flat-motion-graphics playbook matches children's content",
+            "Piper local TTS provides two distinct English voices at $0"
+          ],
+          "why_this_works": "The rhyme is inherently a two-character call-and-response, which is exactly the MVP sweet spot (1-2 characters) the character-design director skill recommends. The pantry door gives one strong recurring framing device, keeping the scene system coherent per the scene director's complexity budget."
+        },
+        {
+          "id": "c2",
+          "title": "Karaoke Kitchen",
+          "hook": "The whole rhyme bounces to the beat, one big word at a time.",
+          "narrative_structure": "story",
+          "visual_approach": "Music-driven version: a simple ukulele-style backing track carries the rhythm, characters bounce and gesture to the beat, and karaoke-style word-by-word captions dominate the lower third. Characters are smaller, captions are the hero.",
+          "suggested_playbook": "flat-motion-graphics",
+          "target_audience": "Short-attention toddlers on Shorts/Reels",
+          "target_platform": "tiktok",
+          "target_duration_seconds": 50,
+          "key_points": [
+            "Beat-synced character bounces",
+            "Word-level karaoke captions as the visual hero",
+            "Loopable ending"
+          ],
+          "core_message": "A bouncy, sing-along version of the rhyme",
+          "cta": "Sing along and share",
+          "tone": "energetic, bouncy",
+          "grounded_in": [
+            "karaoke caption burn is a Remotion-only feature per the HyperFrames decision matrix",
+            "local music synthesis is simpler for a steady beat than for a lullaby"
+          ],
+          "why_this_works": "Strong for short-form retention, but word-level karaoke captions are explicitly Remotion-only in this project's decision matrix, and the music-driven beat is harder to fake with synthesized audio. More moving parts for the same story."
+        },
+        {
+          "id": "c3",
+          "title": "Bedtime Johny",
+          "hook": "Night falls, the kitchen glows, and the little thief gets caught.",
+          "narrative_structure": "story",
+          "visual_approach": "A moonlit night kitchen: deep blues and warm lamp-glow, a moon visible through the window, stars. The same beats as c1 but with a calm, lullaby mood and slower pacing. More atmospheric, less bouncy.",
+          "suggested_playbook": "flat-motion-graphics",
+          "target_audience": "Bedtime viewing (2-6)",
+          "target_platform": "youtube",
+          "target_duration_seconds": 75,
+          "key_points": [
+            "Night palette with warm lamp glow",
+            "Slower lullaby pacing",
+            "Same two-character cast and beats as c1"
+          ],
+          "core_message": "A sleepy, cozy retelling",
+          "cta": "Sweet dreams",
+          "tone": "calm, lullaby",
+          "grounded_in": [
+            "same rig as c1, only palette and pacing change",
+            "synthesized lullaby music fits a slow tempo better"
+          ],
+          "why_this_works": "Differentiates on mood, but a darker night palette is harder to keep readable for pre-readers and for caption contrast. c1's bright daytime kitchen is the safer, more legible choice for the target age."
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "Agent recommendation pending user approval: c1 is the strongest fit for the pipeline's 2-character sweet spot, keeps one coherent scene system (the pantry door), and the bright palette maximizes caption legibility for pre-readers. c2 is a good fallback if the user wants a punchier short-form cut; c3 is a mood variant of c1 that can be revisited later with the same rigs.",
+        "modifications": []
+      },
+      "production_plan": {
+        "pipeline": "character-animation",
+        "playbook": "flat-motion-graphics",
+        "stages": [
+          {
+            "stage": "research",
+            "tools": [],
+            "approach": "Public-domain nursery rhyme; technique references: flat 2D character shorts (Cocomelon-style silhouette simplicity) and the project's own Ink Theater as a local-motion reference. Feasibility confirmed: 2 characters, simple rig, no physical contact beats.",
+            "fallback_if_unavailable": "n/a - no tools required"
+          },
+          {
+            "stage": "proposal",
+            "tools": [
+              {
+                "tool_name": "provider_menu_summary",
+                "role": "preflight capability audit",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "registry rollup of real tool availability"
+              }
+            ],
+            "approach": "Concepts, runtime comparison, cost, and sample plan presented for approval.",
+            "fallback_if_unavailable": "n/a"
+          },
+          {
+            "stage": "script",
+            "tools": [
+              {
+                "tool_name": "piper_tts",
+                "role": "voice sample for both characters (sample-first rule)",
+                "provider": "piper",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "only TTS available in this sandbox (no cloud API keys); two distinct voices; fully offline"
+              }
+            ],
+            "approach": "Write the 12-line rhyme as action beats with per-line emotion/gaze/pose notes. Generate 2 sample lines per character for voice approval.",
+            "fallback_if_unavailable": "if a Piper voice is unintelligible, swap to the other downloaded voice or adjust length_scale"
+          },
+          {
+            "stage": "character_design",
+            "tools": [
+              {
+                "tool_name": "character_spec_generator",
+                "role": "structured character specs",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "deterministic local spec generator"
+              }
+            ],
+            "approach": "Define Johny and Papa: silhouettes, palette, emotions (happy, mischievous, surprised, giggly, warm, amused), actions (tiptoe, eat, wipe, peek, giggle, run, lean, ruffle).",
+            "fallback_if_unavailable": "hand-author the spec JSON to the same schema"
+          },
+          {
+            "stage": "rig_plan",
+            "tools": [
+              {
+                "tool_name": "svg_rig_builder",
+                "role": "draft SVG rig data",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "deterministic local rig drafter"
+              },
+              {
+                "tool_name": "pose_library_builder",
+                "role": "draft pose library",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "deterministic local pose drafter"
+              }
+            ],
+            "approach": "SVG rig parts (body, head, eyes, brows, mouth, arms, legs, hair, apron for Papa) with pivots, layer order, constraints, and named poses for every required action.",
+            "fallback_if_unavailable": "hand-author rig JSON to the same schema"
+          },
+          {
+            "stage": "scene_plan",
+            "tools": [],
+            "approach": "Map the 12 lines to ~8 scenes: establish kitchen, sneak-in, eat, call-and-response x4, peek, reveal, giggle, run-off + end card. One establishing shot, action beats, reaction beats, resolution - per the complexity budget.",
+            "fallback_if_unavailable": "n/a"
+          },
+          {
+            "stage": "assets",
+            "tools": [
+              {
+                "tool_name": "piper_tts",
+                "role": "all 12 dialogue lines, 2 voices",
+                "provider": "piper",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "free, offline, two distinct voices"
+              },
+              {
+                "tool_name": "character_rig_renderer",
+                "role": "SVG character parts + HyperFrames scene package",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "native renderer for this pipeline"
+              },
+              {
+                "tool_name": "ffmpeg",
+                "role": "local lullaby music bed synthesis (Pixabay blocked 403, no AI music keys)",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "only available music path in this sandbox"
+              }
+            ],
+            "approach": "Generate all TTS lines, synthesize a gentle lullaby bed (soft chord arpeggio + light percussion), build kitchen background as SVG, produce character SVG parts. Sample first: 10-15s proof before full batch.",
+            "fallback_if_unavailable": "music: drop to music-only-ambient or silent with captions (user opt-out path)"
+          },
+          {
+            "stage": "edit",
+            "tools": [
+              {
+                "tool_name": "action_timeline_compiler",
+                "role": "compile timed action timeline",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "deterministic local compiler"
+              }
+            ],
+            "approach": "Convert scene beats to timed GSAP actions with anticipation/hold/action/settle. Mouth-open beats aligned to each TTS line's measured duration.",
+            "fallback_if_unavailable": "hand-author the timeline JSON to the same schema"
+          },
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "character_rig_renderer",
+                "role": "prepare HyperFrames render package",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "emits the hyperframes workspace + composition"
+              },
+              {
+                "tool_name": "video_compose",
+                "role": "final MP4 render via HyperFrames",
+                "provider": "hyperframes",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "locked runtime from proposal"
+              },
+              {
+                "tool_name": "audio_mixer",
+                "role": "mix dialogue + music bed with ducking",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "local, free"
+              },
+              {
+                "tool_name": "character_animation_reviewer",
+                "role": "rig/pose/timeline QA",
+                "provider": "openmontage",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "pipeline QA gate"
+              }
+            ],
+            "approach": "hyperframes lint + validate, render 1080x1920 @30fps, mix audio, ffprobe + 4-position frame sampling + audio level check, character QA report.",
+            "fallback_if_unavailable": "if HyperFrames render fails, escalate to user before any runtime swap (motion_required=true)"
+          },
+          {
+            "stage": "publish",
+            "tools": [
+              {
+                "tool_name": "publish_local",
+                "role": "package final MP4 + metadata + thumbnail",
+                "provider": "local",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "local packaging only; no platform accounts configured"
+              }
+            ],
+            "approach": "Deliver final.mp4 + title/description metadata + poster frame to the workspace output folder.",
+            "fallback_if_unavailable": "n/a"
+          }
+        ],
+        "quality_tradeoffs": [
+          {
+            "tradeoff": "Piper local TTS (free, robotic-ish) vs cloud TTS like ElevenLabs (expressive, ~$0.10-0.30)",
+            "recommendation": "Use Piper. No cloud API keys exist in this sandbox, and Piper's two voices are clearly distinct (child-ish vs warm adult).",
+            "quality_impact": "Voices sound synthetic rather than expressive; acceptable for a nursery-rhyme test production."
+          },
+          {
+            "tradeoff": "Local FFmpeg-synthesized lullaby (free, simple) vs AI music (Suno/ElevenLabs, unavailable)",
+            "recommendation": "Synthesize a gentle ukulele-style chord arpeggio with soft dynamics.",
+            "quality_impact": "Music is simple and loopable rather than composed; it sits low under dialogue so the impact is small."
+          },
+          {
+            "tradeoff": "SVG flat characters (local, crisp, fully controllable) vs AI-generated character images (unavailable - no image gen keys)",
+            "recommendation": "Hand-authored SVG rigs in the flat-motion-graphics style.",
+            "quality_impact": "Characters are simple cartoon shapes, not richly illustrated; this is the pipeline's native path and stays crisp at 1080p."
+          }
+        ],
+        "alternative_paths": [
+          {
+            "description": "Free local path (this proposal): Piper TTS + SVG rigs + HyperFrames + FFmpeg music",
+            "total_cost_usd": 0,
+            "quality_level": "budget",
+            "what_changes": "baseline - nothing added"
+          },
+          {
+            "description": "Premium path (if API keys are added later): ElevenLabs voices + Suno music + FLUX character art",
+            "total_cost_usd": 4.5,
+            "quality_level": "premium",
+            "what_changes": "expressive voices, composed music, illustrated characters; same pipeline and runtime"
+          }
+        ],
+        "delivery_promise": {
+          "promise_type": "motion_led",
+          "motion_required": true,
+          "source_required": false,
+          "tone_mode": "playful",
+          "quality_floor": "presentable",
+          "approved_fallback": null
+        },
+        "renderer_family": "animation-first",
+        "render_runtime": "hyperframes",
+        "composition_mode": "atelier",
+        "art_direction": "Warm flat cartoon: cream/honey/coral palette, thick rounded outlines, simple two-tone characters, cozy kitchen with pantry door as the stage. Motion language: bouncy anticipation-overshoot springs, squash-and-stretch on bounces, holds on every dialogue line. Signature device: the pantry door as a framing proscenium. Big rounded sans captions in cream with coral highlight.",
+        "music_source": {
+          "source_type": "bring_your_own",
+          "provider": "local_ffmpeg_synth",
+          "mood_direction": "gentle lullaby, ukulele-style arpeggio, warm and slow",
+          "estimated_cost_usd": 0
+        },
+        "voice_selection": {
+          "provider": "piper",
+          "voice_id": "en_US-lessac-medium (Johny) + en_GB-alan-medium (Papa)",
+          "rationale": "Only TTS available in this sandbox (no cloud keys). Two acoustically distinct voices: lessac = brighter/younger, alan = warmer/lower. Both tested and intelligible.",
+          "estimated_cost_usd": 0,
+          "delivery_style": "Johny: bright, quick, slightly mischievous. Papa: warm, slow, gentle, amused.",
+          "pacing_policy": "Papa lines slightly slower (length_scale 1.05) with clear call-out phrasing; Johny lines quicker (0.95) with a giggle-friendly cadence. 0.3s sentence silence.",
+          "sample_approval_required": true
+        },
+        "decision_log_ref": "projects/johny-johny/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "piper_tts",
+            "operation": "12 dialogue lines across 2 voices",
+            "quantity": 12,
+            "estimated_usd": 0,
+            "notes": "local, offline"
+          },
+          {
+            "tool": "ffmpeg",
+            "operation": "lullaby music bed synthesis (~70s)",
+            "quantity": 1,
+            "estimated_usd": 0,
+            "notes": "local synth; Pixabay 403-blocked from this sandbox"
+          },
+          {
+            "tool": "character_rig_renderer",
+            "operation": "SVG rig + HyperFrames scene package",
+            "quantity": 1,
+            "estimated_usd": 0,
+            "notes": "local"
+          },
+          {
+            "tool": "video_compose",
+            "operation": "HyperFrames render 1080x1920 @30fps ~65s",
+            "quantity": 1,
+            "estimated_usd": 0,
+            "notes": "local CPU render"
+          },
+          {
+            "tool": "audio_mixer",
+            "operation": "dialogue + music mix with ducking",
+            "quantity": 1,
+            "estimated_usd": 0,
+            "notes": "local"
+          }
+        ],
+        "budget_cap_usd": 5.0,
+        "budget_verdict": "within_budget",
+        "savings_options": []
+      },
+      "approval": {
+        "status": "pending",
+        "user_notes": "Awaiting user approval of concept c1, runtime (hyperframes), free local tool path, and the 10-15s sample-first plan."
+      },
+      "metadata": {
+        "sample_plan": "Before full production: render a 10-15s sample containing Johny (one expression change + tiptoe action), Papa (lean-in + call-out), the kitchen background, one dialogue line per character, and the music bed. User approves sample before batch asset generation.",
+        "honest_limitations": "1) Voices are synthetic (Piper), not expressive cloud TTS. 2) Music is a simple synthesized lullaby, not a composed track. 3) Characters are flat SVG cartoons, not illustrated. 4) character-animation pipeline is marked beta in this project. 5) No AI image/video generation is available in this sandbox (no API keys), so all visuals are locally authored SVG - which is the pipeline's native path anyway.",
+        "preflight_summary": {
+          "composition_runtimes": {
+            "ffmpeg": true,
+            "remotion": true,
+            "hyperframes": true
+          },
+          "character_animation": "6/6 configured",
+          "tts": "1/18 configured (piper, local)",
+          "music": "0/6 generation; pixabay search 403-blocked; local FFmpeg synth used",
+          "image_generation": "0/29 (no API keys)",
+          "video_generation": "0/33 (no API keys)"
+        }
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "johny-johny",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for a two-character nursery rhyme",
+          "options_considered": [
+            {
+              "option_id": "p1",
+              "label": "character-animation",
+              "score": 0.95,
+              "reason": "Purpose-built for local rigged cartoon characters with dialogue between 1-2 characters - exact match for Johny + Papa"
+            },
+            {
+              "option_id": "p2",
+              "label": "animation",
+              "score": 0.6,
+              "reason": "Production-stable but designed for motion graphics/diagrams, not character acting; would route dialogue scenes awkwardly",
+              "rejected_because": "no character rig/pose/action stages"
+            },
+            {
+              "option_id": "p3",
+              "label": "cinematic",
+              "score": 0.2,
+              "reason": "Mood-led edits of generated footage; no character acting",
+              "rejected_because": "wrong category entirely"
+            }
+          ],
+          "selected": "p1",
+          "reason": "The rhyme is a two-character call-and-response; character-animation is the only pipeline with character_design, rig_plan, and action_timeline stages. Marked beta - disclosed to user."
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime for character acting",
+          "options_considered": [
+            {
+              "option_id": "r1",
+              "label": "hyperframes",
+              "score": 0.9,
+              "reason": "character_rig_renderer natively emits a HyperFrames workspace + GSAP composition; HTML/SVG/GSAP is the natural medium for rigged SVG characters; lint+validate available"
+            },
+            {
+              "option_id": "r2",
+              "label": "remotion",
+              "score": 0.7,
+              "reason": "Available and strong for caption burn, but the character rig renderer's native handoff is HyperFrames; word-level karaoke (not needed here) is the main Remotion advantage",
+              "rejected_because": "renderer handoff is HyperFrames-native; no karaoke requirement in selected concept c1"
+            },
+            {
+              "option_id": "r3",
+              "label": "ffmpeg",
+              "score": 0.1,
+              "reason": "Post-processing only",
+              "rejected_because": "cannot do character acting"
+            }
+          ],
+          "selected": "r1",
+          "reason": "Both remotion and hyperframes were available and both presented (hard rule). HyperFrames selected because the pipeline's own character_rig_renderer emits a HyperFrames workspace, and concept c1 does not require Remotion-only features (no word-level karaoke, no TalkingHead). Motion_required=true: this runtime is a commitment, not a hint."
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "How the composition is built",
+          "options_considered": [
+            {
+              "option_id": "m1",
+              "label": "atelier",
+              "score": 0.9,
+              "reason": "Hand-author a project-local composition: custom kitchen scene, custom characters, custom captions - no stock scene components fit a nursery rhyme"
+            },
+            {
+              "option_id": "m2",
+              "label": "templated",
+              "score": 0.3,
+              "reason": "Stock cut.type scenes (text_card, stat_card) do not match this content",
+              "rejected_because": "no fitting templates"
+            }
+          ],
+          "selected": "m1",
+          "reason": "Hero character work; art direction committed in production_plan.art_direction."
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "playbook_selection",
+          "subject": "Visual style playbook",
+          "options_considered": [
+            {
+              "option_id": "b1",
+              "label": "flat-motion-graphics",
+              "score": 0.95,
+              "reason": "Recommended by the pipeline manifest for this pipeline; bright rounded flat style is the canonical children's-content look and maximizes caption legibility"
+            },
+            {
+              "option_id": "b2",
+              "label": "anime-ghibli",
+              "score": 0.5,
+              "reason": "Also listed as compatible, but painterly style is far harder to author as local SVG rigs",
+              "rejected_because": "style cannot be faithfully realized with local SVG rigging"
+            },
+            {
+              "option_id": "b3",
+              "label": "ink-sketch (Ink Theater)",
+              "score": 0.7,
+              "reason": "Charming doodle look with mocap, but the user asked for the classic cartoon nursery-rhyme feel, and Ink Puppet's mocap catalog (walk/dance/kick) does not cover tiptoe/eat/peek acting"
+            }
+          ],
+          "selected": "b1",
+          "reason": "Best match to target audience and to what local SVG rigging can actually produce well."
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "TTS provider for the two voices",
+          "options_considered": [
+            {
+              "option_id": "t1",
+              "label": "piper (local)",
+              "score": 0.8,
+              "reason": "The only TTS available in this sandbox (0 cloud API keys configured). Two distinct voices downloaded and tested: en_US-lessac-medium (Johny), en_GB-alan-medium (Papa). Free, offline, deterministic."
+            },
+            {
+              "option_id": "t2",
+              "label": "elevenlabs (cloud)",
+              "score": 0.9,
+              "reason": "Expressive voices, but requires ELEVENLABS_API_KEY which is not configured",
+              "rejected_because": "no API key in this environment"
+            },
+            {
+              "option_id": "t3",
+              "label": "openai_tts (cloud)",
+              "score": 0.8,
+              "reason": "Good quality but requires OPENAI_API_KEY",
+              "rejected_because": "no API key in this environment"
+            }
+          ],
+          "selected": "t1",
+          "reason": "Only available option; sample-first rule applies - 2 sample lines per character presented before batch generation."
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music bed for the rhyme",
+          "options_considered": [
+            {
+              "option_id": "mu1",
+              "label": "local FFmpeg lullaby synth",
+              "score": 0.6,
+              "reason": "Free, offline, deterministic: gentle chord arpeggio with soft dynamics, ~70s, loopable. Simple but warm."
+            },
+            {
+              "option_id": "mu2",
+              "label": "pixabay_music (stock search)",
+              "score": 0.7,
+              "reason": "Free stock lullabies exist, but the tool returned HTTP 403 from this sandbox (datacenter IP block) on two attempts",
+              "rejected_because": "403 Forbidden - unavailable in this environment"
+            },
+            {
+              "option_id": "mu3",
+              "label": "suno/elevenlabs music gen",
+              "score": 0.9,
+              "reason": "Composed lullaby, but requires API keys",
+              "rejected_because": "no API keys in this environment"
+            }
+          ],
+          "selected": "mu1",
+          "reason": "Only working music path. Music sits low under dialogue (ducked), so the simplicity is acceptable. User may opt out to silence at the gate."
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Selected concept",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "The Pantry Door",
+              "score": 0.9,
+              "reason": "2-character sweet spot, one coherent scene system, bright legible palette"
+            },
+            {
+              "option_id": "c2",
+              "label": "Karaoke Kitchen",
+              "score": 0.65,
+              "reason": "Strong short-form hook but needs Remotion-only karaoke captions and a beat-driven music bed that is hard to synthesize"
+            },
+            {
+              "option_id": "c3",
+              "label": "Bedtime Johny",
+              "score": 0.6,
+              "reason": "Mood variant of c1; darker palette hurts pre-reader legibility"
+            }
+          ],
+          "selected": "c1",
+          "reason": "Agent recommendation; user approval pending at this gate."
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "status": "pass",
+    "notes": "3 differentiated concepts; both runtimes presented (hard rule); cost itemized $0; sample plan present; honest limitations listed."
+  },
+  "cost_snapshot": {
+    "total_estimated_usd": 0.0,
+    "budget_cap_usd": 5.0
+  }
+}
