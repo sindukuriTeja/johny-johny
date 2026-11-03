@@ -1,0 +1,30 @@
+{"ts": "2026-11-03T09:23:38.587304+00:00", "tool": "character_spec_generator", "event": "start", "output_path": "projects/johny-johny/artifacts/character_design.json"}
+{"ts": "2026-11-03T09:23:38.710739+00:00", "tool": "character_spec_generator", "event": "finish", "output_path": "projects/johny-johny/artifacts/character_design.json", "success": true, "cost_usd": 0.0, "duration_s": 0.07}
+{"ts": "2026-11-03T09:24:55.496503+00:00", "tool": "svg_rig_builder", "event": "start", "output_path": "projects/johny-johny/artifacts/rig_plan.json"}
+{"ts": "2026-11-03T09:24:55.568659+00:00", "tool": "svg_rig_builder", "event": "finish", "output_path": "projects/johny-johny/artifacts/rig_plan.json", "success": true, "cost_usd": 0.0, "duration_s": 0.04}
+{"ts": "2026-11-03T09:24:55.663243+00:00", "tool": "pose_library_builder", "event": "start", "output_path": "projects/johny-johny/artifacts/pose_library.json"}
+{"ts": "2026-11-03T09:24:55.735435+00:00", "tool": "pose_library_builder", "event": "finish", "output_path": "projects/johny-johny/artifacts/pose_library.json", "success": true, "cost_usd": 0.0, "duration_s": 0.04}
+{"ts": "2026-11-03T09:28:48.586999+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s1_papa.wav"}
+{"ts": "2026-11-03T09:28:50.614542+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s1_papa.wav", "success": false, "cost_usd": 0.0, "duration_s": 2.0}
+{"ts": "2026-11-03T09:30:06.654328+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s1_papa.wav"}
+{"ts": "2026-11-03T09:30:11.410222+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s1_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.72}
+{"ts": "2026-11-03T09:30:11.523474+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s2_johny.wav"}
+{"ts": "2026-11-03T09:30:16.378496+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s2_johny.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.83}
+{"ts": "2026-11-03T09:30:16.494726+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s3_papa.wav"}
+{"ts": "2026-11-03T09:30:20.990458+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s3_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.47}
+{"ts": "2026-11-03T09:30:21.106441+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s4_johny.wav"}
+{"ts": "2026-11-03T09:30:25.618828+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s4_johny.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.49}
+{"ts": "2026-11-03T09:30:25.731868+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s5_papa.wav"}
+{"ts": "2026-11-03T09:30:30.343622+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s5_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.58}
+{"ts": "2026-11-03T09:30:30.453512+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s6_johny.wav"}
+{"ts": "2026-11-03T09:30:35.042691+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s6_johny.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.56}
+{"ts": "2026-11-03T09:30:35.157964+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s7_papa.wav"}
+{"ts": "2026-11-03T09:30:39.625524+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s7_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.44}
+{"ts": "2026-11-03T09:30:39.735377+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s8_johny.wav"}
+{"ts": "2026-11-03T09:30:44.214880+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s8_johny.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.45}
+{"ts": "2026-11-03T09:30:44.328043+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s9_papa.wav"}
+{"ts": "2026-11-03T09:30:49.068475+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s9_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.71}
+{"ts": "2026-11-03T09:30:49.181893+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s10_johny.wav"}
+{"ts": "2026-11-03T09:30:53.829118+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s10_johny.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.62}
+{"ts": "2026-11-03T09:30:53.943356+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/johny-johny/assets/audio/tts_s11_papa.wav"}
+{"ts": "2026-11-03T09:30:58.513239+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/johny-johny/assets/audio/tts_s11_papa.wav", "success": true, "cost_usd": 0.0, "duration_s": 4.54}
