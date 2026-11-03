@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Johny Johny, Yes Papa</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      body { margin: 0; background: #fff3df; font-family: "Noto Sans", system-ui, sans-serif; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #bg { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #stage { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+      .caption {
+        position: absolute; left: 90px; width: 900px; text-align: center;
+        font-size: 56px; font-weight: 800; color: #ffffff; line-height: 1.25;
+        -webkit-text-stroke: 10px #5a3d2b; paint-order: stroke fill;
+        letter-spacing: 0.5px;
+      }
+      #cap1, #cap5 { top: 1560px; }
+      #cap2, #cap6 { top: 1620px; }
+      #cap3, #cap7 { top: 1600px; }
+      #cap4, #cap8 { top: 1640px; }
+      #cap9 { top: 1580px; }
+      #cap10 { top: 1600px; }
+      #cap11 { top: 1590px; }
+      #title {
+        position: absolute; top: 210px; left: 60px; width: 960px; text-align: center;
+        font-size: 104px; font-weight: 800; color: #ff8f68; line-height: 1.12;
+        -webkit-text-stroke: 14px #ffffff; paint-order: stroke fill;
+      }
+      #endcard {
+        position: absolute; inset: 0; background: #fff3df;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+      }
+      #end-title {
+        font-size: 92px; font-weight: 800; color: #ff8f68; text-align: center; line-height: 1.15; margin: 0 40px;
+        -webkit-text-stroke: 12px #ffffff; paint-order: stroke fill;
+      }
+      #end-sub { font-size: 46px; font-weight: 700; color: #a06a3a; margin-top: 60px; }
+      #blackout { position: absolute; inset: 0; background: #000000; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="johny-johny" data-width="1080" data-height="1920" data-duration="54">
+
+      <img id="bg" class="clip" src="assets/bg_kitchen.png" data-start="0" data-duration="54" data-track-index="0" alt="" />
+
+      <audio id="master-audio" class="clip" src="assets/master_mix.wav" data-start="0" data-duration="54" data-track-index="20" data-volume="1"></audio>
+
+      <svg id="stage" class="clip" data-start="0" data-duration="48" data-track-index="1" viewBox="0 0 1080 1920" role="img" aria-label="Johny and Papa in the kitchen">
+        <!-- ================= PAPA (tall, apron) ================= -->
+        <g id="papa">
+          <ellipse id="papa-shadow" cx="0" cy="1505" rx="135" ry="20" fill="rgba(0,0,0,0.15)" />
+          <rect x="-62" y="1240" width="50" height="250" rx="22" fill="#a06a3a" />
+          <rect x="12" y="1240" width="50" height="250" rx="22" fill="#a06a3a" />
+          <ellipse cx="-38" cy="1492" rx="40" ry="18" fill="#6b4423" />
+          <ellipse cx="38" cy="1492" rx="40" ry="18" fill="#6b4423" />
+          <rect x="-98" y="940" width="196" height="320" rx="58" fill="#ff8f68" />
+          <!-- apron -->
+          <rect x="-78" y="1000" width="156" height="252" rx="22" fill="#fff3df" stroke="#f2c94c" stroke-width="6" />
+          <rect x="-40" y="1100" width="80" height="64" rx="12" fill="#ffe7a3" stroke="#f2c94c" stroke-width="5" />
+          <line x1="-78" y1="1030" x2="-98" y2="980" stroke="#f2c94c" stroke-width="8" stroke-linecap="round" />
+          <line x1="78" y1="1030" x2="98" y2="980" stroke="#f2c94c" stroke-width="8" stroke-linecap="round" />
+          <!-- arms -->
+          <g id="papa-arm-l">
+            <path d="M-95 1000 Q-142 1090 -126 1158" fill="none" stroke="#ff8f68" stroke-width="32" stroke-linecap="round" />
+            <circle cx="-126" cy="1164" r="20" fill="#ffd39f" />
+          </g>
+          <g id="papa-arm-r">
+            <path d="M95 1000 Q142 1090 126 1158" fill="none" stroke="#ff8f68" stroke-width="32" stroke-linecap="round" />
+            <circle cx="126" cy="1164" r="20" fill="#ffd39f" />
+          </g>
+          <!-- head -->
+          <g id="papa-head">
+            <circle cx="0" cy="820" r="96" fill="#ffd39f" />
+            <path d="M-96 790 Q-90 700 0 694 Q90 700 96 790 Q60 742 0 740 Q-60 742 -96 790 Z" fill="#6b4423" />
+            <circle cx="-96" cy="822" r="16" fill="#ffd39f" />
+            <circle cx="96" cy="822" r="16" fill="#ffd39f" />
+            <g id="papa-eyes">
+              <ellipse cx="-34" cy="806" rx="15" ry="19" fill="#ffffff" />
+              <ellipse cx="34" cy="806" rx="15" ry="19" fill="#ffffff" />
+            </g>
+            <g id="papa-pupils">
+              <circle cx="-31" cy="810" r="7" fill="#3a2a1c" />
+              <circle cx="37" cy="810" r="7" fill="#3a2a1c" />
+            </g>
+            <path id="papa-brow-l" d="M-52 780 Q-34 772 -16 780" fill="none" stroke="#6b4423" stroke-width="8" stroke-linecap="round" />
+            <path id="papa-brow-r" d="M16 780 Q34 772 52 780" fill="none" stroke="#6b4423" stroke-width="8" stroke-linecap="round" />
+            <circle cx="0" cy="838" r="12" fill="#f2b28c" />
+            <path id="papa-mouth" d="M-26 872 Q0 894 26 872" fill="none" stroke="#5a3d2b" stroke-width="8" stroke-linecap="round" />
+          </g>
+        </g>
+
+        <!-- ================= JOHNY (toddler, overalls) ================= -->
+        <g id="johny">
+            <ellipse id="johny-shadow" cx="0" cy="1505" rx="95" ry="16" fill="rgba(0,0,0,0.15)" />
+            <rect x="-48" y="1380" width="40" height="105" rx="18" fill="#75b8ff" />
+            <rect x="8" y="1380" width="40" height="105" rx="18" fill="#75b8ff" />
+            <ellipse cx="-28" cy="1488" rx="32" ry="15" fill="#6b4423" />
+            <ellipse cx="28" cy="1488" rx="32" ry="15" fill="#6b4423" />
+            <rect x="-72" y="1240" width="144" height="160" rx="44" fill="#75b8ff" />
+            <rect x="-44" y="1210" width="88" height="70" rx="16" fill="#75b8ff" />
+            <circle cx="-26" cy="1222" r="7" fill="#ffe7a3" />
+            <circle cx="26" cy="1222" r="7" fill="#ffe7a3" />
+            <!-- arms -->
+            <g id="johny-arm-l">
+              <path d="M-70 1290 Q-106 1340 -96 1384" fill="none" stroke="#ffd39f" stroke-width="26" stroke-linecap="round" />
+              <circle cx="-96" cy="1390" r="16" fill="#ffd39f" />
+            </g>
+            <g id="johny-arm-r">
+              <path d="M70 1290 Q106 1340 96 1384" fill="none" stroke="#ffd39f" stroke-width="26" stroke-linecap="round" />
+              <circle cx="96" cy="1390" r="16" fill="#ffd39f" />
+              <rect id="johny-cube" x="78" y="1366" width="36" height="36" rx="9" fill="#ffffff" stroke="#d9c9a3" stroke-width="4" />
+            </g>
+            <!-- head -->
+            <g id="johny-head">
+              <circle cx="0" cy="1120" r="112" fill="#ffd39f" />
+              <path d="M-112 1090 Q-100 990 0 984 Q100 990 112 1090 Q70 1030 20 1034 Q60 1000 10 1006 Q-40 1010 -60 1040 Q-95 1030 -112 1090 Z" fill="#8a5a2b" />
+              <circle cx="-112" cy="1122" r="17" fill="#ffd39f" />
+              <circle cx="112" cy="1122" r="17" fill="#ffd39f" />
+              <g id="johny-eyes">
+                <ellipse cx="-40" cy="1102" rx="17" ry="22" fill="#ffffff" />
+                <ellipse cx="40" cy="1102" rx="17" ry="22" fill="#ffffff" />
+              </g>
+              <g id="johny-pupils">
+                <circle cx="-36" cy="1107" r="8" fill="#3a2a1c" />
+                <circle cx="44" cy="1107" r="8" fill="#3a2a1c" />
+              </g>
+              <!-- sugar on nose -->
+              <circle cx="-8" cy="1136" r="6" fill="#ffffff" />
+              <circle cx="6" cy="1142" r="5" fill="#ffffff" />
+              <circle cx="-2" cy="1148" r="4" fill="#ffffff" />
+              <circle cx="-40" cy="1150" r="12" fill="#ff9d7a" opacity="0.55" />
+              <circle cx="40" cy="1150" r="12" fill="#ff9d7a" opacity="0.55" />
+              <path id="johny-mouth" d="M-28 1168 Q0 1192 28 1168" fill="none" stroke="#5a3d2b" stroke-width="8" stroke-linecap="round" />
+            </g>
+          </g>
+      </svg>
+
+      <div id="title" class="clip" data-start="0" data-duration="4" data-track-index="3">Johny Johny,<br />Yes Papa</div>
+
+      <div id="cap1" class="clip caption" data-start="4.2" data-duration="2.3" data-track-index="5">Johny Johny, what are you doing in there?</div>
+      <div id="cap2" class="clip caption" data-start="6.6" data-duration="1.7" data-track-index="5">Eating sugar, papa!</div>
+      <div id="cap3" class="clip caption" data-start="11.2" data-duration="1.2" data-track-index="5">Am I allowed to?</div>
+      <div id="cap4" class="clip caption" data-start="12.5" data-duration="1.0" data-track-index="5">Yes papa.</div>
+      <div id="cap5" class="clip caption" data-start="16.2" data-duration="2.3" data-track-index="5">Johny Johny, what did you see in there?</div>
+      <div id="cap6" class="clip caption" data-start="18.6" data-duration="1.3" data-track-index="5">Nobody, papa.</div>
+      <div id="cap7" class="clip caption" data-start="23.2" data-duration="1.2" data-track-index="5">Will you tell papa?</div>
+      <div id="cap8" class="clip caption" data-start="24.5" data-duration="0.9" data-track-index="5">No no.</div>
+      <div id="cap9" class="clip caption" data-start="28.2" data-duration="1.8" data-track-index="5">Oh dear dear, what will you do?</div>
+      <div id="cap10" class="clip caption" data-start="30.1" data-duration="2.0" data-track-index="5">Sugar will rot your teeth, papa!</div>
+      <div id="cap11" class="clip caption" data-start="36.2" data-duration="1.9" data-track-index="5">I will tell your mama!</div>
+
+      <svg id="cube" class="clip" data-start="48" data-duration="6" data-track-index="6" viewBox="0 0 170 170" style="position:absolute; left:455px; top:560px; width:170px; height:170px;">
+        <rect x="0" y="0" width="170" height="170" rx="28" fill="#ffffff" stroke="#e8d9b8" stroke-width="6" />
+        <ellipse cx="48" cy="68" rx="11" ry="13" fill="#5a3d2b" />
+        <ellipse id="cube-eye" cx="122" cy="68" rx="11" ry="13" fill="#5a3d2b" />
+        <path d="M55 104 Q85 132 115 104" fill="none" stroke="#5a3d2b" stroke-width="8" stroke-linecap="round" />
+      </svg>
+      <div id="end-title" class="clip" data-start="48" data-duration="6" data-track-index="6" style="position:absolute; top:800px; left:60px; width:960px;"><span style="display:block">Johny Johny,</span><span style="display:block">Yes Papa</span></div>
+      <div id="end-sub" class="clip" data-start="48" data-duration="6" data-track-index="6" style="position:absolute; top:1160px; left:60px; width:960px;">Follow for more nursery rhymes</div>
+
+      <div id="blackout" class="clip" data-start="53.2" data-duration="0.8" data-track-index="9"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const J = (s) => gsap.utils.selector("#johny")(s);
+      const P = (s) => gsap.utils.selector("#papa")(s);
+
+      // ---- origins ----
+      tl.set("#papa-head", { svgOrigin: "0 920" }, 0);
+      tl.set("#johny-head", { svgOrigin: "0 1240" }, 0);
+      tl.set("#papa-arm-l", { svgOrigin: "-95 1000" }, 0);
+      tl.set("#papa-arm-r", { svgOrigin: "95 1000" }, 0);
+      tl.set("#johny-arm-l", { svgOrigin: "-70 1290" }, 0);
+      tl.set("#johny-arm-r", { svgOrigin: "70 1290" }, 0);
+
+      // ---- SC1 (0-4): title pop + Johny peeks from behind door ----
+      tl.from("#title", { scale: 0.3, opacity: 0, duration: 0.7, ease: "back.out(2)" }, 0.3);
+      tl.to("#title", { opacity: 0, duration: 0.4 }, 3.5);
+      tl.set("#johny", { x: 1320 }, 0);
+      tl.to("#johny", { x: 700, duration: 1.1, ease: "power2.out" }, 1.0);
+      tl.to("#johny", { y: -26, duration: 0.3, yoyo: true, repeat: 1, ease: "power1.inOut" }, 2.1);
+      tl.to(J("#johny-head"), { rotation: 8, duration: 0.4, yoyo: true, repeat: 1, ease: "sine.inOut" }, 1.4);
+      tl.to("#johny", { x: 1320, duration: 1.0, ease: "power2.in" }, 3.0);
+
+      // ---- SC2 (4-11): Papa leans in, calls out; Johny freezes, admits ----
+      tl.set("#papa", { x: 260, opacity: 0 }, 0);
+      tl.fromTo("#papa", { x: 100, opacity: 0 }, { x: 260, opacity: 1, duration: 0.8, ease: "power2.out" }, 4.0);
+      tl.to("#papa", { rotation: 6, duration: 0.5, ease: "power2.out" }, 4.6);
+      tl.to("#papa", { rotation: 0, duration: 0.4 }, 5.2);
+      tl.to(P("#papa-brow-r"), { y: -10, duration: 0.25, yoyo: true, repeat: 1 }, 4.8);
+      tl.to(P("#papa-pupils"), { x: 14, duration: 0.3 }, 4.8);
+      // Johny tiptoes in and freezes
+      tl.set("#johny", { x: 700 }, 4.0);
+      tl.to("#johny", { x: 540, duration: 0.9, ease: "power1.inOut" }, 4.1);
+      tl.to("#johny", { scaleY: 0.94, duration: 0.12, transformOrigin: "50% 100%" }, 5.0);
+      tl.to("#johny", { scaleY: 1, duration: 0.25, ease: "back.out(2)" }, 5.12);
+      // lick: right arm to mouth, beam
+      tl.to("#johny-arm-r", { rotation: -120, duration: 0.4, ease: "power2.out" }, 6.5);
+      tl.to(J("#johny-mouth"), { scaleY: 1.4, duration: 0.3, transformOrigin: "50% 0%" }, 6.6);
+      tl.to("#johny-arm-r", { rotation: 0, duration: 0.4, ease: "power2.out" }, 7.4);
+      // blinks
+      tl.to(J("#johny-eyes"), { scaleY: 0.08, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 5.0);
+      tl.to(P("#papa-eyes"), { scaleY: 0.08, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 5.4);
+
+      // ---- SC3 (11-16): Papa teases; Johny nods + nibbles ----
+      tl.to("#papa-head", { rotation: -10, duration: 0.4, ease: "back.out(2)" }, 11.2);
+      tl.to("#papa-head", { rotation: 0, duration: 0.5, ease: "sine.inOut" }, 12.0);
+      tl.to(P("#papa-mouth"), { scaleY: 1.5, duration: 0.25, yoyo: true, repeat: 2, transformOrigin: "50% 0%" }, 11.2);
+      tl.to("#johny-head", { y: 14, duration: 0.3, yoyo: true, repeat: 3, ease: "power1.inOut" }, 12.5);
+      tl.to("#johny-arm-r", { rotation: -110, duration: 0.25, yoyo: true, repeat: 3, ease: "power1.inOut" }, 12.5);
+
+      // ---- SC4 (16-23): Papa cranes neck; Johny looks around, shrugs ----
+      tl.to("#papa", { rotation: 10, duration: 0.5, ease: "power2.out" }, 16.2);
+      tl.to(P("#papa-pupils"), { x: 18, duration: 0.4 }, 16.4);
+      tl.to("#papa", { rotation: 0, duration: 0.5 }, 19.5);
+      tl.to(J("#johny-pupils"), { x: -12, duration: 0.4 }, 18.6);
+      tl.to(J("#johny-pupils"), { x: 12, duration: 0.4 }, 19.2);
+      tl.to(J("#johny-pupils"), { x: 0, duration: 0.3 }, 19.8);
+      tl.to("#johny-arm-l", { rotation: 24, duration: 0.3, yoyo: true, repeat: 1, ease: "power1.inOut" }, 19.0);
+      tl.to("#johny-arm-r", { rotation: -24, duration: 0.3, yoyo: true, repeat: 1, ease: "power1.inOut" }, 19.0);
+
+      // ---- SC5 (23-28): Papa crouches, open hands; Johny shakes head, covers mouth, giggles ----
+      tl.to("#papa", { y: 90, duration: 0.6, ease: "power2.out" }, 23.2);
+      tl.to("#papa-arm-l", { rotation: 30, duration: 0.4 }, 23.4);
+      tl.to("#papa-arm-r", { rotation: -18, duration: 0.4 }, 23.4);
+      tl.to("#johny-head", { rotation: -12, duration: 0.25, yoyo: true, repeat: 3, ease: "sine.inOut" }, 24.5);
+      tl.to("#johny-arm-l", { rotation: -95, duration: 0.3, ease: "power2.out" }, 24.7);
+      tl.to("#johny-arm-r", { rotation: 95, duration: 0.3, ease: "power2.out" }, 24.7);
+      tl.to("#johny", { y: -14, duration: 0.18, yoyo: true, repeat: 5, ease: "power1.inOut" }, 25.2);
+      tl.to("#johny-arm-l", { rotation: 0, duration: 0.3 }, 26.6);
+      tl.to("#johny-arm-r", { rotation: 0, duration: 0.3 }, 26.6);
+      tl.to("#papa", { y: 0, duration: 0.5 }, 27.3);
+      tl.to("#papa-arm-l", { rotation: 0, duration: 0.4 }, 27.3);
+      tl.to("#papa-arm-r", { rotation: 0, duration: 0.4 }, 27.3);
+
+      // ---- SC6 (28-36): Papa mock-dramatic; Johny points proudly ----
+      tl.to("#papa-arm-l", { rotation: -140, duration: 0.4, ease: "power2.out" }, 28.2);
+      tl.to("#papa-head", { rotation: 8, duration: 0.35, yoyo: true, repeat: 2, ease: "sine.inOut" }, 28.4);
+      tl.to("#papa", { y: 40, duration: 0.4 }, 28.2);
+      tl.to("#johny-arm-r", { rotation: -150, duration: 0.4, ease: "back.out(2)" }, 30.1);
+      tl.to(J("#johny-mouth"), { scaleY: 1.6, duration: 0.3, yoyo: true, repeat: 2, transformOrigin: "50% 0%" }, 30.2);
+      tl.to("#johny", { y: -18, duration: 0.3, yoyo: true, repeat: 1, ease: "power1.inOut" }, 30.5);
+      tl.to("#papa", { y: 0, duration: 0.4 }, 33.5);
+      tl.to("#papa-arm-l", { rotation: 0, duration: 0.4 }, 33.5);
+      tl.to("#johny-arm-r", { rotation: 0, duration: 0.4 }, 33.5);
+
+      // ---- SC7 (36-48): Papa points + laughs, ruffles hair; Johny giggles and runs off ----
+      tl.to("#papa-arm-r", { rotation: -150, duration: 0.4, ease: "back.out(2)" }, 36.2);
+      tl.to("#papa", { y: -20, duration: 0.25, yoyo: true, repeat: 5, ease: "power1.inOut" }, 36.4);
+      tl.to(P("#papa-mouth"), { scaleY: 1.8, duration: 0.3, yoyo: true, repeat: 5, transformOrigin: "50% 0%" }, 36.4);
+      // ruffle: papa leans toward johny, arm to johny head
+      tl.to("#papa", { x: 380, duration: 0.6, ease: "power2.inOut" }, 38.5);
+      tl.to("#papa-arm-r", { rotation: -60, duration: 0.4 }, 38.7);
+      tl.to(J("#johny-head"), { y: 10, duration: 0.2, yoyo: true, repeat: 2, ease: "power1.inOut" }, 38.9);
+      tl.to("#papa", { x: 260, duration: 0.5 }, 40.0);
+      tl.to("#papa-arm-r", { rotation: 0, duration: 0.4 }, 40.0);
+      // Johny giggles then runs off right
+      tl.to("#johny", { y: -16, duration: 0.16, yoyo: true, repeat: 5, ease: "power1.inOut" }, 39.5);
+      tl.to("#johny", { x: 1400, duration: 1.6, ease: "power2.in" }, 41.5);
+      tl.to("#johny", { opacity: 0, duration: 0.3 }, 42.9);
+      // Papa follows a step
+      tl.to("#papa", { x: 400, duration: 1.2, ease: "power1.inOut" }, 41.8);
+      tl.to("#papa", { x: 260, duration: 0.8 }, 43.6);
+
+      // ---- SC8 (48-54): end card ----
+      tl.from("#cube", { scale: 0.2, opacity: 0, duration: 0.7, ease: "back.out(2.2)" }, 48.4);
+      tl.from("#end-title", { y: 40, opacity: 0, duration: 0.7, ease: "power3.out" }, 48.8);
+      tl.from("#end-sub", { y: 24, opacity: 0, duration: 0.6, ease: "power3.out" }, 49.4);
+      tl.to("#cube-eye", { scaleY: 0.08, duration: 0.1, yoyo: true, repeat: 3, repeatDelay: 0.9, transformOrigin: "50% 50%" }, 49.5);
+      tl.to("#cube", { y: -14, duration: 0.8, yoyo: true, repeat: 2, ease: "sine.inOut" }, 49.5);
+      tl.to("#blackout", { opacity: 1, duration: 0.8, ease: "power2.in" }, 53.2);
+
+      window.__timelines["johny-johny"] = tl;
+    </script>
+  </body>
+</html>
