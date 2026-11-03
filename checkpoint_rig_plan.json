@@ -1,0 +1,864 @@
+{
+  "version": "1.0",
+  "project_id": "johny-johny",
+  "pipeline_type": "character-animation",
+  "stage": "rig_plan",
+  "status": "completed",
+  "timestamp": "2026-11-03T09:26:27.672866+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "rig_plan": {
+      "version": "1.0",
+      "characters": [
+        {
+          "character_id": "johny",
+          "rig_type": "svg_rig",
+          "parts": [
+            {
+              "id": "body",
+              "kind": "torso",
+              "layer": 20
+            },
+            {
+              "id": "head",
+              "kind": "head",
+              "layer": 40,
+              "parent": "body"
+            },
+            {
+              "id": "eye_left",
+              "kind": "eye",
+              "layer": 50,
+              "parent": "head"
+            },
+            {
+              "id": "eye_right",
+              "kind": "eye",
+              "layer": 50,
+              "parent": "head"
+            },
+            {
+              "id": "pupil_left",
+              "kind": "pupil",
+              "layer": 51,
+              "parent": "eye_left"
+            },
+            {
+              "id": "pupil_right",
+              "kind": "pupil",
+              "layer": 51,
+              "parent": "eye_right"
+            },
+            {
+              "id": "mouth",
+              "kind": "mouth",
+              "layer": 52,
+              "parent": "head"
+            },
+            {
+              "id": "arm_left",
+              "kind": "limb",
+              "layer": 35,
+              "parent": "body"
+            },
+            {
+              "id": "arm_right",
+              "kind": "limb",
+              "layer": 35,
+              "parent": "body"
+            },
+            {
+              "id": "leg_left",
+              "kind": "limb",
+              "layer": 10,
+              "parent": "body"
+            },
+            {
+              "id": "leg_right",
+              "kind": "limb",
+              "layer": 10,
+              "parent": "body"
+            }
+          ],
+          "joints": {
+            "body": {
+              "pivot": [
+                320,
+                380
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "head": {
+              "pivot": [
+                320,
+                220
+              ],
+              "rotation": [
+                -35,
+                35
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "eye_left": {
+              "pivot": [
+                288,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "eye_right": {
+              "pivot": [
+                352,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "pupil_left": {
+              "pivot": [
+                288,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "pupil_right": {
+              "pivot": [
+                352,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "mouth": {
+              "pivot": [
+                320,
+                260
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "arm_left": {
+              "pivot": [
+                260,
+                330
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "arm_right": {
+              "pivot": [
+                380,
+                330
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "leg_left": {
+              "pivot": [
+                285,
+                470
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "leg_right": {
+              "pivot": [
+                355,
+                470
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            }
+          },
+          "layers": [
+            "leg_left",
+            "leg_right",
+            "body",
+            "arm_left",
+            "arm_right",
+            "head",
+            "eye_left",
+            "eye_right",
+            "pupil_left",
+            "pupil_right",
+            "mouth"
+          ],
+          "views": [
+            "front",
+            "side"
+          ],
+          "required_poses": [
+            "blink",
+            "cover_mouth",
+            "eat_lick",
+            "freeze",
+            "giggle",
+            "idle",
+            "look_left",
+            "look_right",
+            "nod",
+            "peek",
+            "point",
+            "run_off",
+            "shake_head",
+            "shrink_shrug",
+            "surprised",
+            "tiptoe"
+          ],
+          "required_actions": [
+            "tiptoe",
+            "freeze",
+            "eat_lick",
+            "nod",
+            "peek",
+            "shrink_shrug",
+            "shake_head",
+            "cover_mouth",
+            "point",
+            "giggle",
+            "run_off",
+            "idle",
+            "blink"
+          ],
+          "risks": [
+            "Generated pivots are first-pass estimates; review with preview frames."
+          ]
+        },
+        {
+          "character_id": "papa",
+          "rig_type": "svg_rig",
+          "parts": [
+            {
+              "id": "body",
+              "kind": "torso",
+              "layer": 20
+            },
+            {
+              "id": "head",
+              "kind": "head",
+              "layer": 40,
+              "parent": "body"
+            },
+            {
+              "id": "eye_left",
+              "kind": "eye",
+              "layer": 50,
+              "parent": "head"
+            },
+            {
+              "id": "eye_right",
+              "kind": "eye",
+              "layer": 50,
+              "parent": "head"
+            },
+            {
+              "id": "pupil_left",
+              "kind": "pupil",
+              "layer": 51,
+              "parent": "eye_left"
+            },
+            {
+              "id": "pupil_right",
+              "kind": "pupil",
+              "layer": 51,
+              "parent": "eye_right"
+            },
+            {
+              "id": "mouth",
+              "kind": "mouth",
+              "layer": 52,
+              "parent": "head"
+            },
+            {
+              "id": "arm_left",
+              "kind": "limb",
+              "layer": 35,
+              "parent": "body"
+            },
+            {
+              "id": "arm_right",
+              "kind": "limb",
+              "layer": 35,
+              "parent": "body"
+            },
+            {
+              "id": "leg_left",
+              "kind": "limb",
+              "layer": 10,
+              "parent": "body"
+            },
+            {
+              "id": "leg_right",
+              "kind": "limb",
+              "layer": 10,
+              "parent": "body"
+            }
+          ],
+          "joints": {
+            "body": {
+              "pivot": [
+                320,
+                380
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "head": {
+              "pivot": [
+                320,
+                220
+              ],
+              "rotation": [
+                -35,
+                35
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "eye_left": {
+              "pivot": [
+                288,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "eye_right": {
+              "pivot": [
+                352,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "pupil_left": {
+              "pivot": [
+                288,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "pupil_right": {
+              "pivot": [
+                352,
+                210
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "mouth": {
+              "pivot": [
+                320,
+                260
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "arm_left": {
+              "pivot": [
+                260,
+                330
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "arm_right": {
+              "pivot": [
+                380,
+                330
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "leg_left": {
+              "pivot": [
+                285,
+                470
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            "leg_right": {
+              "pivot": [
+                355,
+                470
+              ],
+              "rotation": [
+                -75,
+                95
+              ],
+              "scale": [
+                0.8,
+                1.2
+              ]
+            }
+          },
+          "layers": [
+            "leg_left",
+            "leg_right",
+            "body",
+            "arm_left",
+            "arm_right",
+            "head",
+            "eye_left",
+            "eye_right",
+            "pupil_left",
+            "pupil_right",
+            "mouth"
+          ],
+          "views": [
+            "front",
+            "side"
+          ],
+          "required_poses": [
+            "blink",
+            "crouch",
+            "follow",
+            "idle",
+            "laugh",
+            "lean",
+            "look_left",
+            "look_right",
+            "peek",
+            "point",
+            "ruffle_hair",
+            "surprised"
+          ],
+          "required_actions": [
+            "lean",
+            "crouch",
+            "peek",
+            "point",
+            "ruffle_hair",
+            "follow",
+            "idle",
+            "blink",
+            "laugh"
+          ],
+          "risks": [
+            "Generated pivots are first-pass estimates; review with preview frames."
+          ]
+        }
+      ],
+      "metadata": {
+        "source": "svg_rig_builder"
+      }
+    },
+    "pose_library": {
+      "version": "1.0",
+      "characters": [
+        {
+          "character_id": "johny",
+          "poses": {
+            "idle": {
+              "description": "Neutral readable hold",
+              "parts": {},
+              "hold_frames": 24
+            },
+            "blink": {
+              "description": "Quick eye close/open",
+              "parts": {
+                "eye_left": {
+                  "scaleY": 0.08
+                },
+                "eye_right": {
+                  "scaleY": 0.08
+                }
+              },
+              "hold_frames": 3,
+              "transition": "power1.inOut"
+            },
+            "look_left": {
+              "description": "Gaze shifts left",
+              "parts": {
+                "pupil_left": {
+                  "x": -6
+                },
+                "pupil_right": {
+                  "x": -6
+                }
+              },
+              "hold_frames": 18
+            },
+            "look_right": {
+              "description": "Gaze shifts right",
+              "parts": {
+                "pupil_left": {
+                  "x": 6
+                },
+                "pupil_right": {
+                  "x": 6
+                }
+              },
+              "hold_frames": 18
+            },
+            "surprised": {
+              "description": "Head lifts, eyes widen, mouth opens",
+              "parts": {
+                "head": {
+                  "y": -4,
+                  "rotation": -4
+                },
+                "mouth": {
+                  "shape": "small_o"
+                }
+              },
+              "expression": "surprised",
+              "hold_frames": 24,
+              "transition": "back.out"
+            },
+            "tiptoe": {
+              "description": "First-pass pose for tiptoe",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "freeze": {
+              "description": "First-pass pose for freeze",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "eat_lick": {
+              "description": "First-pass pose for eat_lick",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "nod": {
+              "description": "First-pass pose for nod",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "peek": {
+              "description": "First-pass pose for peek",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "shrink_shrug": {
+              "description": "First-pass pose for shrink_shrug",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "shake_head": {
+              "description": "First-pass pose for shake_head",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "cover_mouth": {
+              "description": "First-pass pose for cover_mouth",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "point": {
+              "description": "First-pass pose for point",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "giggle": {
+              "description": "First-pass pose for giggle",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "run_off": {
+              "description": "First-pass pose for run_off",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            }
+          },
+          "mouth_shapes": {
+            "closed": {
+              "description": "Neutral closed mouth"
+            },
+            "small_o": {
+              "description": "Small open mouth for surprise or vowel"
+            },
+            "wide": {
+              "description": "Wide open mouth"
+            },
+            "smile": {
+              "description": "Smile shape"
+            }
+          },
+          "action_cycles": {
+            "walk": [
+              "walk_contact",
+              "walk_passing"
+            ],
+            "breathe": [
+              "idle"
+            ]
+          }
+        },
+        {
+          "character_id": "papa",
+          "poses": {
+            "idle": {
+              "description": "Neutral readable hold",
+              "parts": {},
+              "hold_frames": 24
+            },
+            "blink": {
+              "description": "Quick eye close/open",
+              "parts": {
+                "eye_left": {
+                  "scaleY": 0.08
+                },
+                "eye_right": {
+                  "scaleY": 0.08
+                }
+              },
+              "hold_frames": 3,
+              "transition": "power1.inOut"
+            },
+            "look_left": {
+              "description": "Gaze shifts left",
+              "parts": {
+                "pupil_left": {
+                  "x": -6
+                },
+                "pupil_right": {
+                  "x": -6
+                }
+              },
+              "hold_frames": 18
+            },
+            "look_right": {
+              "description": "Gaze shifts right",
+              "parts": {
+                "pupil_left": {
+                  "x": 6
+                },
+                "pupil_right": {
+                  "x": 6
+                }
+              },
+              "hold_frames": 18
+            },
+            "surprised": {
+              "description": "Head lifts, eyes widen, mouth opens",
+              "parts": {
+                "head": {
+                  "y": -4,
+                  "rotation": -4
+                },
+                "mouth": {
+                  "shape": "small_o"
+                }
+              },
+              "expression": "surprised",
+              "hold_frames": 24,
+              "transition": "back.out"
+            },
+            "lean": {
+              "description": "First-pass pose for lean",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "crouch": {
+              "description": "First-pass pose for crouch",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "peek": {
+              "description": "First-pass pose for peek",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "point": {
+              "description": "First-pass pose for point",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "ruffle_hair": {
+              "description": "First-pass pose for ruffle_hair",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "follow": {
+              "description": "First-pass pose for follow",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            },
+            "laugh": {
+              "description": "First-pass pose for laugh",
+              "parts": {},
+              "hold_frames": 18,
+              "transition": "power2.inOut"
+            }
+          },
+          "mouth_shapes": {
+            "closed": {
+              "description": "Neutral closed mouth"
+            },
+            "small_o": {
+              "description": "Small open mouth for surprise or vowel"
+            },
+            "wide": {
+              "description": "Wide open mouth"
+            },
+            "smile": {
+              "description": "Smile shape"
+            }
+          },
+          "action_cycles": {
+            "walk": [
+              "walk_contact",
+              "walk_passing"
+            ],
+            "breathe": [
+              "idle"
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "source": "pose_library_builder"
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "status": "pass",
+    "notes": "11 parts each with pivots + rotation constraints; layer order set; all required actions have poses; 4 mouth shapes; walk/breathe cycles."
+  }
+}
