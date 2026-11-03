@@ -1,0 +1,354 @@
+{
+  "version": "1.0",
+  "project_id": "johny-johny",
+  "pipeline_type": "character-animation",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-11-03T09:22:45.752779+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Johny Johny, Yes Papa - The Pantry Door",
+      "total_duration_seconds": 66,
+      "voice_performance": {
+        "performance_intent": "Warm, playful call-and-response between a mischievous child and a gentle, amused father. Papa is slow and clear (a call-out); Johny is quick and bright with a giggle at the end.",
+        "pacing_profile": "conversational",
+        "energy_curve": "Gentle start, playful rise through the Q&A, a warm giggle-resolution at the end. No aggressive peaks - cozy throughout.",
+        "pause_policy": "0.3s sentence silence. Papa lines get a slightly longer lead-in pause (0.4s) to feel like a deliberate call-out. Johny answers snap in quickly.",
+        "sample_section_id": "s2",
+        "provider_notes": {
+          "piper": "Two voices: en_US-lessac-medium for Johny (length_scale 0.95, bright), en_GB-alan-medium for Papa (length_scale 1.05, warm). Keep lines short for clean mouth-shape approximation."
+        }
+      },
+      "sections": [
+        {
+          "id": "s0",
+          "label": "Title card + establish kitchen",
+          "text": "",
+          "start_seconds": 0,
+          "end_seconds": 4,
+          "speaker_directions": "No dialogue. Title 'Johny Johny, Yes Papa' pops in over the cozy kitchen. Johny peeks out from behind the pantry door, grinning.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "calm",
+            "delivery_note": "Music bed intro, soft."
+          }
+        },
+        {
+          "id": "s1",
+          "label": "Papa calls out",
+          "text": "Johny Johny, what are you doing in there?",
+          "start_seconds": 4,
+          "end_seconds": 8,
+          "speaker_directions": "Papa (warm, slow, amused). He leans against the pantry doorframe, one eyebrow up. Johny freezes mid-tiptoe, sugar on his nose.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "gentle, curious",
+            "emphasis_words": [
+              "Johny",
+              "in there"
+            ],
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Call-out phrasing, slightly raised at the end."
+          }
+        },
+        {
+          "id": "s2",
+          "label": "Johny admits it",
+          "text": "Eating sugar, papa!",
+          "start_seconds": 8,
+          "end_seconds": 11,
+          "speaker_directions": "Johny (bright, quick, a little guilty). He takes a tiny lick of his finger, then beams. Sugar sparkles on his nose.",
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "bright, mischievous",
+            "emphasis_words": [
+              "sugar"
+            ],
+            "delivery_note": "Sample line - performance-sensitive."
+          }
+        },
+        {
+          "id": "s3",
+          "label": "Papa asks permission",
+          "text": "Am I allowed to?",
+          "start_seconds": 11,
+          "end_seconds": 14,
+          "speaker_directions": "Papa (playful, teasing). He tilts his head, smiling.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "teasing",
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Rising, playful question."
+          }
+        },
+        {
+          "id": "s4",
+          "label": "Johny says yes",
+          "text": "Yes papa.",
+          "start_seconds": 14,
+          "end_seconds": 16,
+          "speaker_directions": "Johny (cheerful, unbothered). He gives a little nod and keeps nibbling.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "cheerful",
+            "delivery_note": "Short, sweet, matter-of-fact."
+          }
+        },
+        {
+          "id": "s5",
+          "label": "Papa asks what he saw",
+          "text": "Johny Johny, what did you see in there?",
+          "start_seconds": 16,
+          "end_seconds": 20,
+          "speaker_directions": "Papa (curious now). He peeks into the pantry, craning his neck. Johny's eyes dart around.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "curious",
+            "emphasis_words": [
+              "see",
+              "in there"
+            ],
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Genuine curiosity."
+          }
+        },
+        {
+          "id": "s6",
+          "label": "Johny says nobody",
+          "text": "Nobody, papa.",
+          "start_seconds": 20,
+          "end_seconds": 23,
+          "speaker_directions": "Johny (wide-eyed, innocent). He shrugs with both little hands.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "innocent",
+            "delivery_note": "Slightly too-innocent, playful."
+          }
+        },
+        {
+          "id": "s7",
+          "label": "Papa asks to tell",
+          "text": "Will you tell papa?",
+          "start_seconds": 23,
+          "end_seconds": 26,
+          "speaker_directions": "Papa (encouraging). He crouches down to Johny's level, open-handed.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "warm, encouraging",
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Gentle nudge."
+          }
+        },
+        {
+          "id": "s8",
+          "label": "Johny says no no",
+          "text": "No no.",
+          "start_seconds": 26,
+          "end_seconds": 28,
+          "speaker_directions": "Johny (shaking his head, giggly). He covers his mouth, trying not to laugh.",
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "giggly, defiant",
+            "delivery_note": "Quick double 'no', almost laughing."
+          }
+        },
+        {
+          "id": "s9",
+          "label": "Papa asks what he'll do",
+          "text": "Oh dear dear, what will you do?",
+          "start_seconds": 28,
+          "end_seconds": 32,
+          "speaker_directions": "Papa (feigning exasperation, still smiling). He puts a hand on his hip, laughing.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "amused, mock-dramatic",
+            "emphasis_words": [
+              "dear dear"
+            ],
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Playful mock-drama."
+          }
+        },
+        {
+          "id": "s10",
+          "label": "Johny's big answer",
+          "text": "Sugar will rot your teeth, papa!",
+          "start_seconds": 32,
+          "end_seconds": 36,
+          "speaker_directions": "Johny (proud, pointing at Papa's teeth). He grins ear to ear, fully committed to his logic.",
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "proud, triumphant",
+            "emphasis_words": [
+              "rot",
+              "teeth"
+            ],
+            "delivery_note": "Big confident delivery, the payoff line."
+          }
+        },
+        {
+          "id": "s11",
+          "label": "Papa's threat (loving)",
+          "text": "I will tell your mama!",
+          "start_seconds": 36,
+          "end_seconds": 40,
+          "speaker_directions": "Papa (laughing, pointing a finger). He's clearly delighted, not angry. He ruffles Johny's hair.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "delighted, teasing",
+            "emphasis_words": [
+              "mama"
+            ],
+            "pause_before_seconds": 0.4,
+            "delivery_note": "Loving threat, full of laughter."
+          }
+        },
+        {
+          "id": "s12",
+          "label": "Giggle + run off",
+          "text": "",
+          "start_seconds": 40,
+          "end_seconds": 48,
+          "speaker_directions": "No dialogue. Johny breaks into a big giggle and dashes off-screen through the pantry door. Papa shakes his head, smiling, following. Warm family beat.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "warm, joyful",
+            "delivery_note": "Music swells gently; a soft giggle SFX."
+          }
+        },
+        {
+          "id": "s13",
+          "label": "End card",
+          "text": "",
+          "start_seconds": 48,
+          "end_seconds": 54,
+          "speaker_directions": "No dialogue. End card: 'Johny Johny, Yes Papa' with a small 'Follow for more nursery rhymes' line. A sugar cube winks.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "calm",
+            "delivery_note": "Music fades out."
+          }
+        }
+      ],
+      "metadata": {
+        "audio_architecture": "character_dialogue",
+        "characters": [
+          {
+            "id": "johny",
+            "role": "mischievous 4-5 year old boy",
+            "voice": "en_US-lessac-medium (Piper)",
+            "length_scale": 0.95
+          },
+          {
+            "id": "papa",
+            "role": "warm, amused father",
+            "voice": "en_GB-alan-medium (Piper)",
+            "length_scale": 1.05
+          }
+        ],
+        "character_beats": [
+          {
+            "line": "s1",
+            "johny": "freezes mid-tiptoe, sugar on nose",
+            "papa": "leans on doorframe, eyebrow up"
+          },
+          {
+            "line": "s2",
+            "johny": "licks finger, beams",
+            "papa": "smiles"
+          },
+          {
+            "line": "s3",
+            "johny": "nibbles",
+            "papa": "tilts head, teases"
+          },
+          {
+            "line": "s4",
+            "johny": "little nod",
+            "papa": "smiles"
+          },
+          {
+            "line": "s5",
+            "johny": "eyes dart",
+            "papa": "peeks into pantry, cranes neck"
+          },
+          {
+            "line": "s6",
+            "johny": "shrugs both hands, wide-eyed",
+            "papa": "curious"
+          },
+          {
+            "line": "s7",
+            "johny": "listens",
+            "papa": "crouches to his level, open-handed"
+          },
+          {
+            "line": "s8",
+            "johny": "shakes head, covers mouth, giggles",
+            "papa": "smiles"
+          },
+          {
+            "line": "s9",
+            "johny": "giggles",
+            "papa": "hand on hip, mock-dramatic laugh"
+          },
+          {
+            "line": "s10",
+            "johny": "points at Papa's teeth, grins ear to ear",
+            "papa": "surprised then laughing"
+          },
+          {
+            "line": "s11",
+            "johny": "grins",
+            "papa": "points finger, ruffles hair, delighted"
+          },
+          {
+            "line": "s12",
+            "johny": "big giggle, dashes off-screen",
+            "papa": "shakes head smiling, follows"
+          }
+        ],
+        "required_emotions": [
+          "happy",
+          "mischievous",
+          "guilty",
+          "innocent",
+          "giggly",
+          "proud",
+          "warm",
+          "amused",
+          "curious",
+          "teasing"
+        ],
+        "required_actions": [
+          "tiptoe",
+          "freeze",
+          "eat_lick",
+          "nod",
+          "peek",
+          "shrink_shrug",
+          "shake_head",
+          "cover_mouth",
+          "point",
+          "giggle",
+          "run_off",
+          "lean",
+          "crouch",
+          "ruffle_hair",
+          "follow"
+        ],
+        "rhyme_version": "classic 11-line call-and-response (sugar version), public domain",
+        "music": "gentle lullaby bed, ducked under dialogue, swells at s12, fades at s13"
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "status": "pass",
+    "notes": "14 action beats; character_dialogue architecture; 10 emotions + 15 actions; per-line speaker directions; timing 0-54s."
+  }
+}
