@@ -1,0 +1,206 @@
+{
+  "version": "1.0",
+  "project_id": "johny-johny",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "proposal",
+      "category": "pipeline_selection",
+      "subject": "Pipeline for a two-character nursery rhyme",
+      "options_considered": [
+        {
+          "option_id": "p1",
+          "label": "character-animation",
+          "score": 0.95,
+          "reason": "Purpose-built for local rigged cartoon characters with dialogue between 1-2 characters - exact match for Johny + Papa"
+        },
+        {
+          "option_id": "p2",
+          "label": "animation",
+          "score": 0.6,
+          "reason": "Production-stable but designed for motion graphics/diagrams, not character acting; would route dialogue scenes awkwardly",
+          "rejected_because": "no character rig/pose/action stages"
+        },
+        {
+          "option_id": "p3",
+          "label": "cinematic",
+          "score": 0.2,
+          "reason": "Mood-led edits of generated footage; no character acting",
+          "rejected_because": "wrong category entirely"
+        }
+      ],
+      "selected": "p1",
+      "reason": "The rhyme is a two-character call-and-response; character-animation is the only pipeline with character_design, rig_plan, and action_timeline stages. Marked beta - disclosed to user."
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime for character acting",
+      "options_considered": [
+        {
+          "option_id": "r1",
+          "label": "hyperframes",
+          "score": 0.9,
+          "reason": "character_rig_renderer natively emits a HyperFrames workspace + GSAP composition; HTML/SVG/GSAP is the natural medium for rigged SVG characters; lint+validate available"
+        },
+        {
+          "option_id": "r2",
+          "label": "remotion",
+          "score": 0.7,
+          "reason": "Available and strong for caption burn, but the character rig renderer's native handoff is HyperFrames; word-level karaoke (not needed here) is the main Remotion advantage",
+          "rejected_because": "renderer handoff is HyperFrames-native; no karaoke requirement in selected concept c1"
+        },
+        {
+          "option_id": "r3",
+          "label": "ffmpeg",
+          "score": 0.1,
+          "reason": "Post-processing only",
+          "rejected_because": "cannot do character acting"
+        }
+      ],
+      "selected": "r1",
+      "reason": "Both remotion and hyperframes were available and both presented (hard rule). HyperFrames selected because the pipeline's own character_rig_renderer emits a HyperFrames workspace, and concept c1 does not require Remotion-only features (no word-level karaoke, no TalkingHead). Motion_required=true: this runtime is a commitment, not a hint."
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "proposal",
+      "category": "composition_mode",
+      "subject": "How the composition is built",
+      "options_considered": [
+        {
+          "option_id": "m1",
+          "label": "atelier",
+          "score": 0.9,
+          "reason": "Hand-author a project-local composition: custom kitchen scene, custom characters, custom captions - no stock scene components fit a nursery rhyme"
+        },
+        {
+          "option_id": "m2",
+          "label": "templated",
+          "score": 0.3,
+          "reason": "Stock cut.type scenes (text_card, stat_card) do not match this content",
+          "rejected_because": "no fitting templates"
+        }
+      ],
+      "selected": "m1",
+      "reason": "Hero character work; art direction committed in production_plan.art_direction."
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "proposal",
+      "category": "playbook_selection",
+      "subject": "Visual style playbook",
+      "options_considered": [
+        {
+          "option_id": "b1",
+          "label": "flat-motion-graphics",
+          "score": 0.95,
+          "reason": "Recommended by the pipeline manifest for this pipeline; bright rounded flat style is the canonical children's-content look and maximizes caption legibility"
+        },
+        {
+          "option_id": "b2",
+          "label": "anime-ghibli",
+          "score": 0.5,
+          "reason": "Also listed as compatible, but painterly style is far harder to author as local SVG rigs",
+          "rejected_because": "style cannot be faithfully realized with local SVG rigging"
+        },
+        {
+          "option_id": "b3",
+          "label": "ink-sketch (Ink Theater)",
+          "score": 0.7,
+          "reason": "Charming doodle look with mocap, but the user asked for the classic cartoon nursery-rhyme feel, and Ink Puppet's mocap catalog (walk/dance/kick) does not cover tiptoe/eat/peek acting"
+        }
+      ],
+      "selected": "b1",
+      "reason": "Best match to target audience and to what local SVG rigging can actually produce well."
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "TTS provider for the two voices",
+      "options_considered": [
+        {
+          "option_id": "t1",
+          "label": "piper (local)",
+          "score": 0.8,
+          "reason": "The only TTS available in this sandbox (0 cloud API keys configured). Two distinct voices downloaded and tested: en_US-lessac-medium (Johny), en_GB-alan-medium (Papa). Free, offline, deterministic."
+        },
+        {
+          "option_id": "t2",
+          "label": "elevenlabs (cloud)",
+          "score": 0.9,
+          "reason": "Expressive voices, but requires ELEVENLABS_API_KEY which is not configured",
+          "rejected_because": "no API key in this environment"
+        },
+        {
+          "option_id": "t3",
+          "label": "openai_tts (cloud)",
+          "score": 0.8,
+          "reason": "Good quality but requires OPENAI_API_KEY",
+          "rejected_because": "no API key in this environment"
+        }
+      ],
+      "selected": "t1",
+      "reason": "Only available option; sample-first rule applies - 2 sample lines per character presented before batch generation."
+    },
+    {
+      "decision_id": "d-006",
+      "stage": "proposal",
+      "category": "music_source",
+      "subject": "Music bed for the rhyme",
+      "options_considered": [
+        {
+          "option_id": "mu1",
+          "label": "local FFmpeg lullaby synth",
+          "score": 0.6,
+          "reason": "Free, offline, deterministic: gentle chord arpeggio with soft dynamics, ~70s, loopable. Simple but warm."
+        },
+        {
+          "option_id": "mu2",
+          "label": "pixabay_music (stock search)",
+          "score": 0.7,
+          "reason": "Free stock lullabies exist, but the tool returned HTTP 403 from this sandbox (datacenter IP block) on two attempts",
+          "rejected_because": "403 Forbidden - unavailable in this environment"
+        },
+        {
+          "option_id": "mu3",
+          "label": "suno/elevenlabs music gen",
+          "score": 0.9,
+          "reason": "Composed lullaby, but requires API keys",
+          "rejected_because": "no API keys in this environment"
+        }
+      ],
+      "selected": "mu1",
+      "reason": "Only working music path. Music sits low under dialogue (ducked), so the simplicity is acceptable. User may opt out to silence at the gate."
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "proposal",
+      "category": "concept_selection",
+      "subject": "Selected concept",
+      "options_considered": [
+        {
+          "option_id": "c1",
+          "label": "The Pantry Door",
+          "score": 0.9,
+          "reason": "2-character sweet spot, one coherent scene system, bright legible palette"
+        },
+        {
+          "option_id": "c2",
+          "label": "Karaoke Kitchen",
+          "score": 0.65,
+          "reason": "Strong short-form hook but needs Remotion-only karaoke captions and a beat-driven music bed that is hard to synthesize"
+        },
+        {
+          "option_id": "c3",
+          "label": "Bedtime Johny",
+          "score": 0.6,
+          "reason": "Mood variant of c1; darker palette hurts pre-reader legibility"
+        }
+      ],
+      "selected": "c1",
+      "reason": "Agent recommendation; user approval pending at this gate."
+    }
+  ]
+}
