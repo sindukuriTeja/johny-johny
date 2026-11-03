@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <!-- Warm cozy kitchen, flat two-tone, soft warm palette -->
+  <!-- Wall -->
+  <rect x="0" y="0" width="1080" height="1180" fill="#fff3df"/>
+  <!-- Wainscot -->
+  <rect x="0" y="900" width="1080" height="280" fill="#ffe7c2"/>
+  <rect x="0" y="892" width="1080" height="14" fill="#f2c94c" opacity="0.55"/>
+  <!-- Floor -->
+  <rect x="0" y="1180" width="1080" height="740" fill="#f7d9a8"/>
+  <rect x="0" y="1180" width="1080" height="18" fill="#e8b877"/>
+  <!-- Floor planks -->
+  <g stroke="#eec488" stroke-width="4" opacity="0.7">
+    <line x1="0" y1="1360" x2="1080" y2="1360"/>
+    <line x1="0" y1="1560" x2="1080" y2="1560"/>
+    <line x1="0" y1="1760" x2="1080" y2="1760"/>
+    <line x1="270" y1="1180" x2="270" y2="1360"/>
+    <line x1="810" y1="1360" x2="810" y2="1560"/>
+    <line x1="540" y1="1560" x2="540" y2="1760"/>
+  </g>
+  <!-- Window with soft daylight -->
+  <g id="window">
+    <rect x="700" y="180" width="280" height="330" rx="26" fill="#bfe3ff"/>
+    <rect x="700" y="180" width="280" height="330" rx="26" fill="none" stroke="#f2c94c" stroke-width="14"/>
+    <line x1="840" y1="187" x2="840" y2="503" stroke="#f2c94c" stroke-width="12"/>
+    <line x1="707" y1="345" x2="973" y2="345" stroke="#f2c94c" stroke-width="12"/>
+    <!-- little sun -->
+    <circle cx="765" cy="255" r="34" fill="#ffe7a3"/>
+  </g>
+  <!-- Shelf with jars -->
+  <g id="shelf">
+    <rect x="120" y="300" width="420" height="20" rx="8" fill="#d99a5b"/>
+    <!-- sugar jar -->
+    <rect x="150" y="190" width="110" height="112" rx="16" fill="#ffffff" stroke="#f2c94c" stroke-width="8"/>
+    <rect x="150" y="190" width="110" height="34" rx="16" fill="#ff8f68"/>
+    <circle cx="185" cy="265" r="9" fill="#ffe7a3"/>
+    <circle cx="215" cy="278" r="9" fill="#ffe7a3"/>
+    <circle cx="235" cy="258" r="9" fill="#ffe7a3"/>
+    <!-- honey jar -->
+    <rect x="300" y="212" width="96" height="90" rx="16" fill="#f2c94c" stroke="#d99a5b" stroke-width="8"/>
+    <rect x="300" y="212" width="96" height="26" rx="13" fill="#d99a5b"/>
+    <!-- cup -->
+    <path d="M430 220 h70 v58 a35 35 0 0 1 -70 0 z" fill="#8fd17f"/>
+    <path d="M500 232 a22 22 0 0 1 0 40" fill="none" stroke="#8fd17f" stroke-width="10"/>
+  </g>
+  <!-- Pantry door (the story anchor) -->
+  <g id="pantry">
+    <rect x="120" y="560" width="330" height="620" rx="18" fill="#d99a5b"/>
+    <rect x="140" y="580" width="290" height="580" rx="12" fill="#e8b877"/>
+    <rect x="160" y="620" width="250" height="240" rx="10" fill="#f7d9a8"/>
+    <rect x="160" y="900" width="250" height="240" rx="10" fill="#f7d9a8"/>
+    <circle cx="420" cy="880" r="16" fill="#8a5a2b"/>
+    <!-- faint peek shadow behind door -->
+    <rect x="120" y="560" width="330" height="620" rx="18" fill="#000000" opacity="0.06"/>
+  </g>
+  <!-- Counter -->
+  <g id="counter">
+    <rect x="560" y="1040" width="520" height="40" rx="10" fill="#d99a5b"/>
+    <rect x="580" y="1080" width="480" height="160" fill="#f7d9a8"/>
+    <rect x="580" y="1080" width="480" height="160" fill="none" stroke="#e8b877" stroke-width="6"/>
+    <line x1="820" y1="1080" x2="820" y2="1240" stroke="#e8b877" stroke-width="6"/>
+    <!-- bowl on counter -->
+    <path d="M660 1000 h150 a75 40 0 0 1 -150 0 z" fill="#8fd17f"/>
+    <ellipse cx="735" cy="1000" rx="75" ry="14" fill="#6fb85f"/>
+    <!-- sugar bowl -->
+    <path d="M880 1006 h120 a60 34 0 0 1 -120 0 z" fill="#ff8f68"/>
+    <ellipse cx="940" cy="1006" rx="60" ry="12" fill="#e5734d"/>
+    <circle cx="920" cy="998" r="7" fill="#fff"/>
+    <circle cx="945" cy="994" r="7" fill="#fff"/>
+    <circle cx="965" cy="1000" r="7" fill="#fff"/>
+  </g>
+  <!-- Rug -->
+  <ellipse cx="540" cy="1700" rx="420" ry="120" fill="#ff8f68" opacity="0.5"/>
+  <ellipse cx="540" cy="1700" rx="330" ry="92" fill="#ffd39f" opacity="0.7"/>
+</svg>
