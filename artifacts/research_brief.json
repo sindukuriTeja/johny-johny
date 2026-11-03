@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "topic": "Johny Johny Yes Papa - a cozy two-character nursery rhyme animation",
+  "research_date": "2026-11-03",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Johny Johny Yes Papa - THE BEST Song for Children (LooLoo Kids)",
+        "url": "https://www.youtube.com/watch?v=F4tHL8reNCs",
+        "source": "youtube",
+        "angle": "High-energy 3D/2D edutainment with bright colors, fast cuts, and a sung call-and-response",
+        "what_it_covers": "Full rhyme, two characters (boy + father), kitchen/sugar setting",
+        "what_it_misses": "Calm pacing, warm family tone, readable captions for pre-readers",
+        "engagement_signal": "19M likes, 7.2B views (10y old) - the category benchmark"
+      },
+      {
+        "title": "Johny Johny Yes Papa (Billion Surprise Toys viral meme)",
+        "source": "youtube",
+        "angle": "Viral 2018 meme version with dance moves and Baby Shark melody",
+        "what_it_covers": "The rhyme recontextualized as an internet meme",
+        "what_it_misses": "The original cozy narrative; became associated with absurd/edgy content",
+        "engagement_signal": "Went viral on Twitter Aug 2018; later aggressive DMCA controversy"
+      },
+      {
+        "title": "Johnny Johnny Yes Papa (Wikipedia - origin & reception)",
+        "url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa",
+        "source": "blog",
+        "angle": "Documentary: origin (Kenya 1980), public-domain status, and the Elsgate criticism",
+        "what_it_covers": "Standard short lyrics, call-and-response form, tune = Twinkle Twinkle Little Star",
+        "what_it_misses": "n/a - reference source"
+      }
+    ],
+    "saturated_angles": [
+      "High-stimulation edutainment (fast cuts, loud, hyper-saturated) - the dominant and heavily criticized style",
+      "Meme/parody recontextualizations (dance, Baby Shark mashups)",
+      "Surprise-egg / toy-unboxing filler videos built around the rhyme"
+    ],
+    "underserved_gaps": [
+      "A calm, warm, genuinely cozy family take - the anti-Elsagate: slow pacing, soft palette, affectionate (not absurd) father-son dynamic",
+      "Readable big captions so pre-readers can follow the words, not just the melody",
+      "A version that preserves the classic 12-line narrative (the full 'what are you doing in there' version) rather than the compressed 8-line meme cut"
+    ]
+  },
+  "trending": {
+    "recent_developments": [
+      {
+        "headline": "Nursery-rhyme 'edutainment' remains a top kids category but faces ongoing criticism for over-stimulation",
+        "date": "2026",
+        "relevance": "Confirms a clear opening for a calmer, warmer alternative that parents actively seek out"
+      }
+    ],
+    "active_discussions": [
+      {
+        "platform": "general parenting/media criticism",
+        "topic_or_url": "Elsagate and 'disturbing' kids content (The Verge, Mashable, NY Mag)",
+        "sentiment": "Frustration with hyper-stimulating content; appetite for calmer alternatives",
+        "key_quotes": [
+          "described as 'terrifying', 'disturbing', 'nonsensical'",
+          "a child and their family lying to one another as a form of affection"
+        ]
+      }
+    ],
+    "timeliness_window": "evergreen"
+  },
+  "data_points": [
+    {
+      "claim": "The poem was recorded in Kenya in 1980, per scholar Francelia Butler's 1989 book",
+      "source_url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa",
+      "source_name": "Wikipedia (citing Francelia Butler)",
+      "credibility": "secondary_source",
+      "surprise_factor": "notable",
+      "usable_as": "script_anchor"
+    },
+    {
+      "claim": "The rhyme is in the public domain in India (old enough by 2018), so the words themselves are free to use",
+      "source_url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa",
+      "source_name": "Wikipedia (citing ChuChu TV CEO)",
+      "credibility": "secondary_source",
+      "surprise_factor": "expected",
+      "usable_as": "script_anchor"
+    },
+    {
+      "claim": "The song is a call-and-response, often sung to the tune of Twinkle Twinkle Little Star",
+      "source_url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa",
+      "source_name": "Wikipedia",
+      "credibility": "secondary_source",
+      "surprise_factor": "expected",
+      "usable_as": "script_anchor"
+    },
+    {
+      "claim": "LooLoo Kids' version has ~7.2B views and 19M likes - the category benchmark",
+      "source_url": "https://www.youtube.com/watch?v=F4tHL8reNCs",
+      "source_name": "YouTube (LooLoo Kids)",
+      "credibility": "primary_source",
+      "surprise_factor": "expected",
+      "usable_as": "hook"
+    },
+    {
+      "claim": "The 2018 Billion Surprise Toys version went viral as a meme and later triggered controversial DMCA takedowns over the song's unclear copyright",
+      "source_url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa",
+      "source_name": "Wikipedia",
+      "credibility": "secondary_source",
+      "surprise_factor": "notable",
+      "usable_as": "closing_punch"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "What is the story of Johny Johny Yes Papa?",
+      "Who wrote Johnny Johnny Yes Papa / where is it from?",
+      "What does the rhyme mean / why does the boy lie?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "The rhyme is a modern internet invention",
+        "reality": "It was recorded in Kenya in 1980 and is old enough to be public domain in India by 2018",
+        "source": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa"
+      },
+      {
+        "myth": "The 'lying' is meant to be a moral lesson about honesty",
+        "reality": "Critics read the family 'lying to one another as a form of affection' - it's playful, not didactic",
+        "source": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa"
+      }
+    ],
+    "knowledge_level": "Target audience (toddlers/preschoolers) knows the melody and call-and-response from the dominant edutainment versions; parents know it as a cultural touchstone. A warmer, calmer, caption-readable version is new to them.",
+    "pain_points": [
+      "Parents find the dominant versions over-stimulating and 'disturbing'",
+      "Pre-readers can't follow because captions are small or absent",
+      "The compressed 8-line meme cut drops the full narrative kids love"
+    ]
+  },
+  "angles_discovered": [
+    {
+      "name": "The Cozy Anti-Elsagate",
+      "hook": "The Johny Johny your kids actually love - calm, warm, and readable.",
+      "type": "evergreen",
+      "why_now": "Ongoing criticism of over-stimulating kids content (data point: Elsgate criticism) creates demand for a calmer alternative",
+      "grounded_in": [
+        "underserved_gaps: calm warm family take",
+        "data_points: Elsgate criticism, 7.2B-view benchmark"
+      ]
+    },
+    {
+      "name": "The Full Classic Story",
+      "hook": "All 12 lines, the way it was meant to be told.",
+      "type": "narrative",
+      "why_now": "The meme cut compressed the rhyme to 8 lines; restoring the full 'what are you doing in there' narrative is a differentiator",
+      "grounded_in": [
+        "underserved_gaps: preserve the classic 12-line narrative"
+      ]
+    },
+    {
+      "name": "Sing-Along With Big Words",
+      "hook": "Every word on screen - watch and sing along.",
+      "type": "evergreen",
+      "why_now": "Pre-readers can't follow existing versions; big captions are an underserved feature",
+      "grounded_in": [
+        "underserved_gaps: readable big captions",
+        "audience_insights: pre-readers can't follow"
+      ]
+    }
+  ],
+  "visual_references": [
+    {
+      "description": "LooLoo Kids: bright 3D characters, kitchen setting, fast-paced",
+      "url": "https://www.youtube.com/watch?v=F4tHL8reNCs",
+      "what_works": "Instantly recognizable setting (kitchen + sugar), clear two-character dynamic"
+    },
+    {
+      "description": "Flat 2D silhouette simplicity (Cocomelon-style) as a local-rig reference",
+      "what_works": "Simple rounded shapes read clearly for toddlers and are feasible to author as local SVG rigs"
+    }
+  ],
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Johnny_Johnny_Yes_Papa", "title": "Johnny Johnny Yes Papa - Wikipedia", "used_for": "origin, lyrics, public-domain status, Elsgate reception", "reliability": "secondary" },
+    { "url": "https://www.youtube.com/watch?v=F4tHL8reNCs", "title": "LooLoo Kids - Johny Johny Yes Papa", "used_for": "category benchmark, visual reference", "reliability": "primary" },
+    { "url": "https://memepediadankmemes.fandom.com/wiki/Johny_Johnny_Yes_Papa", "title": "Johny Johny Yes Papa - Memepedia", "used_for": "meme context and variant lyrics", "reliability": "secondary" },
+    { "url": "https://www.quora.com/Who-wrote-Johnny-Johnny-Yes-Papa", "title": "Who wrote Johnny Johnny Yes Papa? - Quora", "used_for": "common audience questions about origin", "reliability": "anecdotal" },
+    { "url": "https://en.wikipedia.org/wiki/Call_and_response_(music)", "title": "Call and response - Wikipedia", "used_for": "confirming the call-and-response form", "reliability": "secondary" }
+  ],
+  "research_summary": "Johny Johny Yes Papa is a public-domain, call-and-response nursery rhyme (recorded in Kenya 1980, often sung to Twinkle Twinkle) that became a multi-billion-view kids-content staple. The dominant versions are high-stimulation 'edutainment' that parents and critics increasingly find over-stimulating and 'disturbing' (the Elsgate phenomenon). The clearest opportunity is the opposite: a calm, warm, genuinely cozy father-son take with big readable captions and the full 12-line narrative - the anti-Elsagate that parents actively want. This directly shapes concept c1 (The Pantry Door): warm palette, slow pacing, affectionate dynamic, caption-forward.",
+  "metadata": {
+    "technique_references": [
+      "Flat 2D silhouette character animation (local SVG rig feasible)",
+      "Call-and-response pacing: each line gets a distinct physical beat",
+      "Squash-and-stretch + anticipation-overshoot for toddler-friendly bouncy motion"
+    ],
+    "feasibility": "2 characters, simple rig, no complex physical contact - well within the character-animation pipeline's MVP sweet spot"
+  }
+}
