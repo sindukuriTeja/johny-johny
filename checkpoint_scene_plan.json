@@ -1,0 +1,493 @@
+{
+  "version": "1.0",
+  "project_id": "johny-johny",
+  "pipeline_type": "character-animation",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-11-03T09:27:51.233441+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "scenes": [
+        {
+          "id": "sc1",
+          "type": "character_scene",
+          "description": "Establish: cozy warm kitchen, pantry door center-right. Title 'Johny Johny, Yes Papa' pops in. Johny peeks out from behind the pantry door, grinning, then tiptoes back in.",
+          "start_seconds": 0,
+          "end_seconds": 4,
+          "script_section_id": "s0",
+          "framing": "wide establishing, 9:16 vertical, kitchen fills frame, pantry door right third",
+          "movement": "title pops in with overshoot; Johny slides out from door, bounces twice, slides back in",
+          "transition_in": "fade_from_warm",
+          "transition_out": "cut",
+          "narrative_role": "establish_context",
+          "character_actions": [
+            {
+              "character_id": "johny",
+              "emotion": "mischievous",
+              "action_sequence": [
+                "peek_out",
+                "grin",
+                "tiptoe",
+                "slide_back_in"
+              ],
+              "notes": "sugar cube in hand, nose already sugary"
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "text_overlay",
+              "description": "Title: Johny Johny Yes Papa",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "music",
+              "description": "Gentle lullaby bed, ducked",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc2",
+          "type": "character_scene",
+          "description": "Papa leans on the pantry doorframe and calls out. Johny freezes mid-tiptoe, sugar on his nose, then admits it with a lick of his finger.",
+          "start_seconds": 4,
+          "end_seconds": 11,
+          "script_section_id": "s1",
+          "framing": "medium two-shot, Papa left, Johny right at door",
+          "movement": "Papa leans in (anticipation + settle); Johny freezes (quick squash), then bounces with the admission",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "narrative_role": "introduce_subject",
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "curious",
+              "action_sequence": [
+                "lean_in",
+                "eyebrow_up",
+                "call_out"
+              ],
+              "dialogue": "Johny Johny, what are you doing in there?"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "guilty",
+              "action_sequence": [
+                "freeze",
+                "blink",
+                "eat_lick",
+                "beam"
+              ],
+              "dialogue": "Eating sugar, papa!"
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s1",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s2",
+              "source": "generate"
+            },
+            {
+              "type": "effect",
+              "description": "Sugar sparkle on Johny nose",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc3",
+          "type": "character_scene",
+          "description": "Papa teases 'Am I allowed to?' tilting his head. Johny nods cheerfully and keeps nibbling.",
+          "start_seconds": 11,
+          "end_seconds": 16,
+          "script_section_id": "s3",
+          "framing": "medium two-shot, same staging",
+          "movement": "Papa head-tilt with overshoot; Johny little nod + nibble bounce",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "narrative_role": "deliver_payload",
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "teasing",
+              "action_sequence": [
+                "tilt_head",
+                "smile",
+                "ask"
+              ],
+              "dialogue": "Am I allowed to?"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "happy",
+              "action_sequence": [
+                "nod",
+                "nibble"
+              ],
+              "dialogue": "Yes papa."
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s3",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s4",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc4",
+          "type": "character_scene",
+          "description": "Papa peeks into the pantry craning his neck, asking what Johny saw. Johny's eyes dart, then he shrugs wide-eyed and innocent.",
+          "start_seconds": 16,
+          "end_seconds": 23,
+          "script_section_id": "s5",
+          "framing": "medium two-shot; Papa shifts to the door edge to peek",
+          "movement": "Papa neck-craning peek (slow, curious); Johny pupils dart left-right, then a big innocent shrug",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "narrative_role": "deliver_payload",
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "curious",
+              "action_sequence": [
+                "peek",
+                "crane_neck",
+                "ask"
+              ],
+              "dialogue": "Johny Johny, what did you see in there?"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "innocent",
+              "action_sequence": [
+                "look_left",
+                "look_right",
+                "shrink_shrug"
+              ],
+              "dialogue": "Nobody, papa."
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s5",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s6",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc5",
+          "type": "character_scene",
+          "description": "Papa crouches to Johny's level, open-handed, asking if he'll tell. Johny shakes his head fast, covers his mouth, and can't stop giggling.",
+          "start_seconds": 23,
+          "end_seconds": 28,
+          "script_section_id": "s7",
+          "framing": "medium two-shot, Papa lowered to child height",
+          "movement": "Papa crouch (anticipation, settle, open hands); Johny fast head-shake, hand to mouth, giggle wiggle",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "narrative_role": "build_tension",
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "warm",
+              "action_sequence": [
+                "crouch",
+                "open_hands",
+                "ask"
+              ],
+              "dialogue": "Will you tell papa?"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "giggly",
+              "action_sequence": [
+                "shake_head",
+                "cover_mouth",
+                "giggle"
+              ],
+              "dialogue": "No no."
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s7",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s8",
+              "source": "generate"
+            },
+            {
+              "type": "sfx",
+              "description": "Soft giggle sound effect",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc6",
+          "type": "character_scene",
+          "description": "Papa mock-dramatic 'Oh dear dear, what will you do?' hand on hip. Johny points at Papa's teeth, proud and triumphant: 'Sugar will rot your teeth, papa!'",
+          "start_seconds": 28,
+          "end_seconds": 36,
+          "script_section_id": "s9",
+          "framing": "medium two-shot, slight push-in for the payoff line",
+          "movement": "Papa hand-on-hip mock-drama with head shake; Johny arm points up at Papa (anticipation + snap), grins ear to ear",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "narrative_role": "deliver_payload",
+          "hero_moment": true,
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "mock_dramatic",
+              "action_sequence": [
+                "hand_on_hip",
+                "head_shake",
+                "ask"
+              ],
+              "dialogue": "Oh dear dear, what will you do?"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "proud",
+              "action_sequence": [
+                "point",
+                "grin_wide"
+              ],
+              "dialogue": "Sugar will rot your teeth, papa!"
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s9",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s10",
+              "source": "generate"
+            },
+            {
+              "type": "effect",
+              "description": "Sparkle burst on climax point",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc7",
+          "type": "character_scene",
+          "description": "Papa laughs and points a finger: 'I will tell your mama!' then ruffles Johny's hair. Johny breaks into a big giggle and dashes off-screen through the pantry door; Papa shakes his head smiling and follows.",
+          "start_seconds": 36,
+          "end_seconds": 48,
+          "script_section_id": "s11",
+          "framing": "medium two-shot widening to full kitchen as Johny runs off",
+          "movement": "Papa finger-point (teasing) then hair-ruffle; Johny big giggle bounce, run cycle off-screen right; Papa follow cycle",
+          "transition_in": "cut",
+          "transition_out": "fade_to_endcard",
+          "narrative_role": "resolution",
+          "character_actions": [
+            {
+              "character_id": "papa",
+              "emotion": "delighted",
+              "action_sequence": [
+                "point",
+                "laugh",
+                "ruffle_hair",
+                "follow"
+              ],
+              "dialogue": "I will tell your mama!"
+            },
+            {
+              "character_id": "johny",
+              "emotion": "giggly",
+              "action_sequence": [
+                "giggle",
+                "run_off"
+              ],
+              "notes": "exits frame right through pantry door"
+            }
+          ],
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm flat kitchen with pantry door",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Johny SVG rig (flat cartoon boy)",
+              "source": "generate"
+            },
+            {
+              "type": "character",
+              "description": "Papa SVG rig (flat cartoon father)",
+              "source": "generate"
+            },
+            {
+              "type": "asset",
+              "description": "tts_s11",
+              "source": "generate"
+            },
+            {
+              "type": "sfx",
+              "description": "Soft giggle sound effect",
+              "source": "generate"
+            },
+            {
+              "type": "music",
+              "description": "Music swell for resolution",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "sc8",
+          "type": "text_card",
+          "description": "End card on warm cream background: 'Johny Johny, Yes Papa' with a winking sugar cube and 'Follow for more nursery rhymes'.",
+          "start_seconds": 48,
+          "end_seconds": 54,
+          "script_section_id": "s13",
+          "framing": "full-frame card, centered",
+          "movement": "title settles with soft overshoot; sugar cube winks; gentle fade out",
+          "transition_in": "fade_from_warm",
+          "transition_out": "fade_to_black",
+          "narrative_role": "call_to_action",
+          "required_assets": [
+            {
+              "type": "background",
+              "description": "Warm cream end-card background",
+              "source": "generate"
+            },
+            {
+              "type": "prop",
+              "description": "Winking sugar cube on end card",
+              "source": "generate"
+            },
+            {
+              "type": "music",
+              "description": "Music fade-out for end card",
+              "source": "generate"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "status": "pass",
+    "notes": "8 scenes; complexity budget respected; hero moment on climax; structured required_assets. Approval derives from proposal gate + generate request."
+  }
+}
